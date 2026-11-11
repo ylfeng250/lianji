@@ -1,0 +1,4 @@
+HSPLcom/superman/lianji/LianjiApp;-><init>()V
+HSPLcom/superman/lianji/LianjiApp;->onCreate()V
+HSPLcom/superman/lianji/MainActivity;-><init>()V
+HSPLcom/superman/lianji/MainActivity;->onCreate(Landroid/os/Bundle;)V

@@ -1,0 +1,29 @@
+Workout Guide visual assets and derived artwork
+================================================
+
+The exercise artwork used by 练迹 comes from Workout Guide by Bryl Lim
+(https://github.com/bryllim/workout-guide) and is licensed under the
+Creative Commons Attribution-ShareAlike 4.0 International license
+(CC BY-SA 4.0).
+
+Copyright (c) 2026 Bryl Lim, except where NOTICE.md identifies an upstream
+source. Seventy-six first-pose frames are vector-traced adaptations of
+Everkinetic artwork (https://github.com/everkinetic/data), also CC BY-SA 4.0.
+
+Derived artwork in this repository
+----------------------------------
+
+- app/src/main/res/drawable/ex_*.xml — SVG converted to Android VectorDrawable
+  (long paths split where needed), with theme tinting applied at runtime.
+  Copyright (c) 2026 Bryl Lim, Everkinetic contributors, and Lianji
+  contributors for the conversion and modifications.
+- docs/screens/*.png — application screenshots that include the artwork.
+
+These files are distributed under CC BY-SA 4.0. You may share and adapt them
+for any purpose, including commercially, provided that you give appropriate
+credit, link to the license, indicate changes, and distribute adaptations
+under the same license.
+
+License text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+Summary: https://creativecommons.org/licenses/by-sa/4.0/
+Attribution details: NOTICE.md

@@ -1,0 +1,43 @@
+# Gradle / Android 构建产物
+.gradle/
+.kotlin/
+build/
+captures/
+.cxx/
+.externalNativeBuild/
+*.hprof
+local.properties
+*.apk
+*.aab
+
+# 签名与本地发布配置（永远不要提交）
+*.jks
+*.keystore
+keystore.properties
+release/
+
+# IDE / 系统
+.idea/
+*.iml
+.fleet/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# 本地和内部资料：开发讨论、笔记、草稿不公开
+docs/internal/
+notes/
+*.local.md
+*.private.md
+*.local.*
+.env
+.env.*
+!.env.example
+
+# 第三方源码/原始数据（按 CONTRIBUTING 的说明自行下载）
+third_party/
+catalog-work/exercises.json
+
+# 日志与临时目录
+*.log
+out/

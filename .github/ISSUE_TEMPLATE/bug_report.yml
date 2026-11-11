@@ -1,0 +1,81 @@
+name: Bug 报告
+description: 报告一个可以复现的问题
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请先搜索已有 issue，并尽量提供可复现的步骤。
+        不要附真实的个人训练数据或备份文件。
+
+  - type: input
+    id: version
+    attributes:
+      label: 应用版本
+      description: 可以在「我的 → 关于」或 APK 文件名里找到
+      placeholder: "1.1.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: 安装来源
+      options:
+        - GitHub Releases
+        - 自己构建
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: 设备与系统版本
+      placeholder: "Pixel 6 / Android 15"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      placeholder: |
+        1. 打开「动作」
+        2. 长按第一个动作
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期望结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图
+      description: 可选。截图请确认不包含个人训练数据。
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 确认
+      options:
+        - label: 已搜索过已有 issue
+          required: true
+        - label: 使用的是最新版本
+          required: false

@@ -1,0 +1,2116 @@
+[
+  {
+    "slug": "bench-press",
+    "nameZh": "杠铃卧推",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "incline-bench-press",
+    "nameZh": "上斜杠铃卧推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+    "stepCount": 5
+  },
+  {
+    "slug": "incline-dumbbell-press",
+    "nameZh": "上斜哑铃卧推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Incline_Dumbbell_Press",
+    "stepCount": 7
+  },
+  {
+    "slug": "dumbbell-bench-press",
+    "nameZh": "哑铃卧推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dumbbell_Bench_Press",
+    "stepCount": 5
+  },
+  {
+    "slug": "decline-bench-press",
+    "nameZh": "下斜杠铃卧推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Decline_Barbell_Bench_Press",
+    "stepCount": 6
+  },
+  {
+    "slug": "machine-chest-press",
+    "nameZh": "器械推胸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "pec-deck",
+    "nameZh": "蝴蝶机夹胸",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Butterfly",
+    "stepCount": 5
+  },
+  {
+    "slug": "cable-fly",
+    "nameZh": "绳索夹胸",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Cable_Crossover",
+    "stepCount": 5
+  },
+  {
+    "slug": "push-up",
+    "nameZh": "俯卧撑",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Pushups",
+    "stepCount": 4
+  },
+  {
+    "slug": "weighted-push-up",
+    "nameZh": "负重俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "overhead-press",
+    "nameZh": "站姿杠铃推举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Barbell_Shoulder_Press",
+    "stepCount": 5
+  },
+  {
+    "slug": "seated-dumbbell-press",
+    "nameZh": "坐姿哑铃推举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "arnold-press",
+    "nameZh": "阿诺德推举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "lateral-raise",
+    "nameZh": "哑铃侧平举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Side_Lateral_Raise",
+    "stepCount": 4
+  },
+  {
+    "slug": "cable-lateral-raise",
+    "nameZh": "绳索侧平举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "front-raise",
+    "nameZh": "前平举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Front_Dumbbell_Raise",
+    "stepCount": 4
+  },
+  {
+    "slug": "rear-delt-fly",
+    "nameZh": "俯身反向飞鸟",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Reverse_Flyes",
+    "stepCount": 6
+  },
+  {
+    "slug": "reverse-pec-deck",
+    "nameZh": "反向蝴蝶机",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "face-pull",
+    "nameZh": "面拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "upright-row",
+    "nameZh": "直立划船",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Upright_Barbell_Row",
+    "stepCount": 4
+  },
+  {
+    "slug": "deadlift",
+    "nameZh": "硬拉",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Barbell_Deadlift",
+    "stepCount": 5
+  },
+  {
+    "slug": "romanian-deadlift",
+    "nameZh": "罗马尼亚硬拉",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Romanian_Deadlift",
+    "stepCount": 5
+  },
+  {
+    "slug": "barbell-row",
+    "nameZh": "杠铃划船",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Bent_Over_Barbell_Row",
+    "stepCount": 4
+  },
+  {
+    "slug": "t-bar-row",
+    "nameZh": "单端杠铃划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-bent-over-row",
+    "nameZh": "哑铃俯身划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "one-arm-dumbbell-row",
+    "nameZh": "单臂哑铃划船",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "One-Arm_Dumbbell_Row",
+    "stepCount": 7
+  },
+  {
+    "slug": "chest-supported-row",
+    "nameZh": "胸托划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "seated-row",
+    "nameZh": "坐姿绳索划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "machine-row",
+    "nameZh": "器械划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "lat-pulldown",
+    "nameZh": "高位下拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "close-grip-lat-pulldown",
+    "nameZh": "窄握高位下拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "straight-arm-pulldown",
+    "nameZh": "直臂下压",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Straight-Arm_Pulldown",
+    "stepCount": 5
+  },
+  {
+    "slug": "pull-up",
+    "nameZh": "引体向上",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Pullups",
+    "stepCount": 5
+  },
+  {
+    "slug": "assisted-pull-up",
+    "nameZh": "辅助引体向上",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "weighted-pull-up",
+    "nameZh": "负重引体向上",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "chin-up",
+    "nameZh": "反手引体向上",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Chin-Up",
+    "stepCount": 5
+  },
+  {
+    "slug": "shrug",
+    "nameZh": "杠铃耸肩",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Barbell_Shrug",
+    "stepCount": 4
+  },
+  {
+    "slug": "squat",
+    "nameZh": "杠铃深蹲",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Barbell_Squat",
+    "stepCount": 6
+  },
+  {
+    "slug": "front-squat",
+    "nameZh": "前蹲",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Front_Barbell_Squat",
+    "stepCount": 6
+  },
+  {
+    "slug": "hack-squat",
+    "nameZh": "哈克深蹲",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Hack_Squat",
+    "stepCount": 7
+  },
+  {
+    "slug": "leg-press",
+    "nameZh": "腿举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Leg_Press",
+    "stepCount": 5
+  },
+  {
+    "slug": "bulgarian-split-squat",
+    "nameZh": "保加利亚分腿蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "walking-lunge",
+    "nameZh": "行走箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "step-up",
+    "nameZh": "上台阶",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dumbbell_Step_Ups",
+    "stepCount": 4
+  },
+  {
+    "slug": "leg-extension",
+    "nameZh": "腿屈伸",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Leg_Extensions",
+    "stepCount": 4
+  },
+  {
+    "slug": "leg-curl",
+    "nameZh": "腿弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Lying_Leg_Curls",
+    "stepCount": 4
+  },
+  {
+    "slug": "seated-leg-curl",
+    "nameZh": "坐姿腿弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Seated_Leg_Curl",
+    "stepCount": 5
+  },
+  {
+    "slug": "hip-thrust",
+    "nameZh": "杠铃臀推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Barbell_Hip_Thrust",
+    "stepCount": 3
+  },
+  {
+    "slug": "glute-bridge",
+    "nameZh": "臀桥",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Butt_Lift_Bridge",
+    "stepCount": 3
+  },
+  {
+    "slug": "good-morning",
+    "nameZh": "早安式",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Good_Morning",
+    "stepCount": 3
+  },
+  {
+    "slug": "standing-calf-raise",
+    "nameZh": "站姿提踵",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Standing_Calf_Raises",
+    "stepCount": 5
+  },
+  {
+    "slug": "seated-calf-raise",
+    "nameZh": "坐姿提踵",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Seated_Calf_Raise",
+    "stepCount": 6
+  },
+  {
+    "slug": "bicep-curl",
+    "nameZh": "哑铃弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dumbbell_Bicep_Curl",
+    "stepCount": 4
+  },
+  {
+    "slug": "hammer-curl",
+    "nameZh": "锤式弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Hammer_Curls",
+    "stepCount": 5
+  },
+  {
+    "slug": "preacher-curl",
+    "nameZh": "牧师凳弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Preacher_Curl",
+    "stepCount": 5
+  },
+  {
+    "slug": "cable-curl",
+    "nameZh": "绳索弯举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "reverse-curl",
+    "nameZh": "反握弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Reverse_Barbell_Curl",
+    "stepCount": 4
+  },
+  {
+    "slug": "wrist-curl",
+    "nameZh": "腕弯举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "tricep-pushdown",
+    "nameZh": "三头下压",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Triceps_Pushdown",
+    "stepCount": 5
+  },
+  {
+    "slug": "overhead-tricep-extension",
+    "nameZh": "绳索过头臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "skull-crusher",
+    "nameZh": "仰卧臂屈伸",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Lying_Triceps_Press",
+    "stepCount": 5
+  },
+  {
+    "slug": "close-grip-bench-press",
+    "nameZh": "窄握卧推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Close-Grip_Barbell_Bench_Press",
+    "stepCount": 5
+  },
+  {
+    "slug": "dip",
+    "nameZh": "双杠臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "assisted-dip",
+    "nameZh": "辅助臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "plank",
+    "nameZh": "平板支撑",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Plank",
+    "stepCount": 2
+  },
+  {
+    "slug": "side-plank",
+    "nameZh": "侧平板支撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hanging-leg-raise",
+    "nameZh": "悬垂举腿",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Hanging_Leg_Raise",
+    "stepCount": 4
+  },
+  {
+    "slug": "cable-crunch",
+    "nameZh": "绳索卷腹",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Cable_Crunch",
+    "stepCount": 6
+  },
+  {
+    "slug": "ab-wheel",
+    "nameZh": "健腹轮",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Ab_Roller",
+    "stepCount": 4
+  },
+  {
+    "slug": "running",
+    "nameZh": "跑步",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "walking",
+    "nameZh": "步行",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cycling",
+    "nameZh": "骑行",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "rowing",
+    "nameZh": "划船机",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "stair-climber",
+    "nameZh": "爬楼机",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-fly",
+    "nameZh": "哑铃飞鸟",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dumbbell_Flyes",
+    "stepCount": 5
+  },
+  {
+    "slug": "incline-cable-fly",
+    "nameZh": "上斜绳索夹胸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "decline-dumbbell-press",
+    "nameZh": "下斜哑铃卧推",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "smith-machine-bench-press",
+    "nameZh": "史密斯机卧推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Smith_Machine_Bench_Press",
+    "stepCount": 5
+  },
+  {
+    "slug": "landmine-press",
+    "nameZh": "地雷杆推举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "chest-dip",
+    "nameZh": "双杠夹胸",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dips_-_Chest_Version",
+    "stepCount": 4
+  },
+  {
+    "slug": "weighted-dip",
+    "nameZh": "负重臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "machine-shoulder-press",
+    "nameZh": "器械推肩",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "standing-dumbbell-press",
+    "nameZh": "站姿哑铃推举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Standing_Dumbbell_Press",
+    "stepCount": 3
+  },
+  {
+    "slug": "push-press",
+    "nameZh": "借力推举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "machine-lateral-raise",
+    "nameZh": "器械侧平举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cable-front-raise",
+    "nameZh": "绳索前平举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "plate-front-raise",
+    "nameZh": "杠铃片前平举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "bent-over-rear-delt-raise",
+    "nameZh": "俯身反向侧平举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cable-rear-delt-fly",
+    "nameZh": "绳索反向飞鸟",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Cable_Rear_Delt_Fly",
+    "stepCount": 4
+  },
+  {
+    "slug": "pendlay-row",
+    "nameZh": "潘德雷划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "inverted-row",
+    "nameZh": "反向划船",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Inverted_Row",
+    "stepCount": 5
+  },
+  {
+    "slug": "meadows-row",
+    "nameZh": "梅多斯划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "single-arm-cable-row",
+    "nameZh": "单臂绳索划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wide-grip-lat-pulldown",
+    "nameZh": "宽握高位下拉",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Wide-Grip_Lat_Pulldown",
+    "stepCount": 6
+  },
+  {
+    "slug": "neutral-grip-pull-up",
+    "nameZh": "对握引体向上",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "assisted-chin-up",
+    "nameZh": "辅助反手引体",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "weighted-chin-up",
+    "nameZh": "负重反手引体",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "rack-pull",
+    "nameZh": "架上硬拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "back-extension",
+    "nameZh": "山羊挺身",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Hyperextensions_Back_Extensions",
+    "stepCount": 6
+  },
+  {
+    "slug": "dumbbell-shrug",
+    "nameZh": "哑铃耸肩",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dumbbell_Shrug",
+    "stepCount": 4
+  },
+  {
+    "slug": "goblet-squat",
+    "nameZh": "高脚杯深蹲",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Goblet_Squat",
+    "stepCount": 3
+  },
+  {
+    "slug": "smith-machine-squat",
+    "nameZh": "史密斯机深蹲",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Smith_Machine_Squat",
+    "stepCount": 6
+  },
+  {
+    "slug": "belt-squat",
+    "nameZh": "腰带深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "sumo-deadlift",
+    "nameZh": "相扑硬拉",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Sumo_Deadlift",
+    "stepCount": 4
+  },
+  {
+    "slug": "trap-bar-deadlift",
+    "nameZh": "六角杠硬拉",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Trap_Bar_Deadlift",
+    "stepCount": 4
+  },
+  {
+    "slug": "lying-leg-curl",
+    "nameZh": "俯卧腿弯举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "nordic-hamstring-curl",
+    "nameZh": "北欧腿弯举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "single-leg-romanian-deadlift",
+    "nameZh": "单腿罗马尼亚硬拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "reverse-lunge",
+    "nameZh": "反向箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "split-squat",
+    "nameZh": "分腿蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cable-kickback",
+    "nameZh": "绳索后踢腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hip-abduction-machine",
+    "nameZh": "髋外展机",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "single-leg-glute-bridge",
+    "nameZh": "单腿臀桥",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Single_Leg_Glute_Bridge",
+    "stepCount": 4
+  },
+  {
+    "slug": "barbell-glute-bridge",
+    "nameZh": "杠铃臀桥",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Barbell_Glute_Bridge",
+    "stepCount": 3
+  },
+  {
+    "slug": "dumbbell-glute-bridge",
+    "nameZh": "哑铃臀桥",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-hip-thrust",
+    "nameZh": "哑铃臀推",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "smith-machine-hip-thrust",
+    "nameZh": "史密斯机臀推",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "smith-machine-romanian-deadlift",
+    "nameZh": "史密斯机罗马尼亚硬拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-romanian-deadlift",
+    "nameZh": "哑铃罗马尼亚硬拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "kettlebell-romanian-deadlift",
+    "nameZh": "壶铃罗马尼亚硬拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cable-pull-through",
+    "nameZh": "绳索拉过",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "machine-glute-kickback",
+    "nameZh": "器械臀后踢",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cable-standing-hip-abduction",
+    "nameZh": "站姿绳索髋外展",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cable-standing-hip-adduction",
+    "nameZh": "站姿绳索髋内收",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hip-adduction-machine",
+    "nameZh": "髋内收机",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "smith-machine-bulgarian-split-squat",
+    "nameZh": "史密斯机保加利亚分腿蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "smith-machine-reverse-lunge",
+    "nameZh": "史密斯机反向箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "smith-machine-split-squat",
+    "nameZh": "史密斯机分腿蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "heel-elevated-goblet-squat",
+    "nameZh": "垫脚跟高脚杯深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-sumo-squat",
+    "nameZh": "哑铃相扑深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-sumo-deadlift",
+    "nameZh": "哑铃相扑硬拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "front-foot-elevated-split-squat",
+    "nameZh": "前脚垫高分腿蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "deficit-reverse-lunge",
+    "nameZh": "垫高反向箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-lateral-lunge",
+    "nameZh": "哑铃侧向箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-curtsy-lunge",
+    "nameZh": "哑铃交叉箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "landmine-squat",
+    "nameZh": "地雷杆深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "landmine-romanian-deadlift",
+    "nameZh": "地雷杆罗马尼亚硬拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "kettlebell-swing",
+    "nameZh": "壶铃摆动",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "glute-focused-back-extension",
+    "nameZh": "臀主导山羊挺身",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "reverse-hyperextension",
+    "nameZh": "反向挺身",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Reverse_Hyperextension",
+    "stepCount": 5
+  },
+  {
+    "slug": "donkey-calf-raise",
+    "nameZh": "驴式提踵",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "leg-press-calf-raise",
+    "nameZh": "腿举提踵",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wall-sit",
+    "nameZh": "靠墙静蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "jump-squat",
+    "nameZh": "跳蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "incline-dumbbell-curl",
+    "nameZh": "上斜哑铃弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Incline_Dumbbell_Curl",
+    "stepCount": 4
+  },
+  {
+    "slug": "concentration-curl",
+    "nameZh": "集中弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Concentration_Curls",
+    "stepCount": 5
+  },
+  {
+    "slug": "ez-bar-curl",
+    "nameZh": "曲杠弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "EZ-Bar_Curl",
+    "stepCount": 5
+  },
+  {
+    "slug": "spider-curl",
+    "nameZh": "蜘蛛弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Spider_Curl",
+    "stepCount": 7
+  },
+  {
+    "slug": "rope-hammer-curl",
+    "nameZh": "绳索锤式弯举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "drag-curl",
+    "nameZh": "拖拽弯举",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Drag_Curl",
+    "stepCount": 4
+  },
+  {
+    "slug": "rope-tricep-pushdown",
+    "nameZh": "绳索三头下压",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-skull-crusher",
+    "nameZh": "双哑铃仰卧臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "single-dumbbell-skullcrusher",
+    "nameZh": "单哑铃仰卧臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-overhead-tricep-extension",
+    "nameZh": "哑铃过头臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "single-arm-dumbbell-tricep-extension",
+    "nameZh": "单臂哑铃过头臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "bench-dip",
+    "nameZh": "凳上臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "tricep-kickback",
+    "nameZh": "三头后踢",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wrist-extension",
+    "nameZh": "腕伸展",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "farmer-carry",
+    "nameZh": "农夫行走",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Farmers_Walk",
+    "stepCount": 3
+  },
+  {
+    "slug": "crunch",
+    "nameZh": "卷腹",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Crunches",
+    "stepCount": 6
+  },
+  {
+    "slug": "reverse-crunch",
+    "nameZh": "反向卷腹",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Reverse_Crunch",
+    "stepCount": 5
+  },
+  {
+    "slug": "russian-twist",
+    "nameZh": "俄罗斯转体",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Russian_Twist",
+    "stepCount": 5
+  },
+  {
+    "slug": "bicycle-crunch",
+    "nameZh": "自行车卷腹",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Air_Bike",
+    "stepCount": 6
+  },
+  {
+    "slug": "mountain-climber",
+    "nameZh": "登山跑",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Mountain_Climbers",
+    "stepCount": 2
+  },
+  {
+    "slug": "dead-bug",
+    "nameZh": "死虫式",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dead_Bug",
+    "stepCount": 7
+  },
+  {
+    "slug": "bird-dog",
+    "nameZh": "鸟狗式",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "pallof-press",
+    "nameZh": "帕洛夫推",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Pallof_Press",
+    "stepCount": 6
+  },
+  {
+    "slug": "cable-woodchop",
+    "nameZh": "绳索伐木",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "half-kneeling-pallof-press",
+    "nameZh": "半跪帕洛夫推",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cable-pallof-hold",
+    "nameZh": "绳索帕洛夫静力",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hanging-knee-raise",
+    "nameZh": "悬垂抬膝",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "captains-chair-knee-raise",
+    "nameZh": "卷腹凳抬膝",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "decline-sit-up",
+    "nameZh": "下斜仰卧起坐",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "weighted-crunch",
+    "nameZh": "负重卷腹",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "weighted-russian-twist",
+    "nameZh": "负重俄罗斯转体",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dumbbell-side-bend",
+    "nameZh": "哑铃侧屈",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Dumbbell_Side_Bend",
+    "stepCount": 4
+  },
+  {
+    "slug": "elliptical",
+    "nameZh": "椭圆机",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "swimming",
+    "nameZh": "游泳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "jump-rope",
+    "nameZh": "跳绳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "assault-bike",
+    "nameZh": "风阻单车",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "skierg",
+    "nameZh": "滑雪机",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hiking",
+    "nameZh": "徒步",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "treadmill-incline-walk",
+    "nameZh": "跑步机上坡走",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "battle-ropes",
+    "nameZh": "战绳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "incline-push-up",
+    "nameZh": "上斜俯卧撑",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Incline_Push-Up",
+    "stepCount": 3
+  },
+  {
+    "slug": "knee-push-up",
+    "nameZh": "跪姿俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wide-push-up",
+    "nameZh": "宽距俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "diamond-push-up",
+    "nameZh": "钻石俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "decline-push-up",
+    "nameZh": "下斜俯卧撑",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Decline_Push-Up",
+    "stepCount": 4
+  },
+  {
+    "slug": "pike-push-up",
+    "nameZh": "折刀俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "feet-elevated-pike-push-up",
+    "nameZh": "脚垫高折刀俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "archer-push-up",
+    "nameZh": "射手俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "typewriter-push-up",
+    "nameZh": "打字机俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "explosive-push-up",
+    "nameZh": "爆发俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hindu-push-up",
+    "nameZh": "印度俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "scapular-push-up",
+    "nameZh": "肩胛俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "push-up-shoulder-tap",
+    "nameZh": "俯卧撑触肩",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wall-push-up",
+    "nameZh": "靠墙俯卧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wall-walk",
+    "nameZh": "爬墙走",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wall-handstand-push-up",
+    "nameZh": "靠墙倒立撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "handstand-push-up",
+    "nameZh": "倒立撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "chair-dip",
+    "nameZh": "椅子臂屈伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "doorway-row",
+    "nameZh": "门框划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "towel-row",
+    "nameZh": "毛巾划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "prone-y-raise",
+    "nameZh": "俯卧上斜举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "prone-t-raise",
+    "nameZh": "俯卧侧平举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "superman",
+    "nameZh": "超人式",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Superman",
+    "stepCount": 4
+  },
+  {
+    "slug": "superman-hold",
+    "nameZh": "超人式静止",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "reverse-snow-angel",
+    "nameZh": "反向雪天使",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dead-hang",
+    "nameZh": "被动悬垂",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "active-hang",
+    "nameZh": "主动悬垂",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "scapular-pull-up",
+    "nameZh": "肩胛引体",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Scapular_Pull-Up",
+    "stepCount": 3
+  },
+  {
+    "slug": "negative-pull-up",
+    "nameZh": "离心引体向上",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "commando-pull-up",
+    "nameZh": "交替侧向引体",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "l-sit-pull-up",
+    "nameZh": "屈腿引体向上",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "towel-pull-up",
+    "nameZh": "毛巾引体向上",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "bodyweight-squat",
+    "nameZh": "自重深蹲",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Bodyweight_Squat",
+    "stepCount": 3
+  },
+  {
+    "slug": "pistol-squat",
+    "nameZh": "手枪深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "assisted-pistol-squat",
+    "nameZh": "辅助手枪深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "shrimp-squat",
+    "nameZh": "虾式深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cossack-squat",
+    "nameZh": "哥萨克深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "sissy-squat",
+    "nameZh": "西西深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "forward-lunge",
+    "nameZh": "向前箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "lateral-lunge",
+    "nameZh": "侧向箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "curtsy-lunge",
+    "nameZh": "交叉箭步蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "skater-squat",
+    "nameZh": "滑冰深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "single-leg-box-squat",
+    "nameZh": "单腿箱式深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "step-down",
+    "nameZh": "下台阶",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "calf-raise",
+    "nameZh": "提踵",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "single-leg-calf-raise",
+    "nameZh": "单腿提踵",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "glute-bridge-march",
+    "nameZh": "臀桥交替抬腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "frog-pump",
+    "nameZh": "蛙式臀桥",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "donkey-kick",
+    "nameZh": "后踢腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "fire-hydrant",
+    "nameZh": "消防栓",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "clamshell",
+    "nameZh": "蚌式开合",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hip-airplane",
+    "nameZh": "髋部旋转控制",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "side-lying-hip-abduction",
+    "nameZh": "侧卧髋外展",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "side-lying-leg-raise",
+    "nameZh": "侧卧抬腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "lying-hamstring-walkout",
+    "nameZh": "仰卧腘绳肌走步",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "towel-hamstring-curl",
+    "nameZh": "毛巾腿弯举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "stability-ball-hamstring-curl",
+    "nameZh": "稳定球腿弯举",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-glute-bridge",
+    "nameZh": "弹力带臀桥",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-hip-thrust",
+    "nameZh": "弹力带臀推",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-frog-pump",
+    "nameZh": "弹力带蛙式臀桥",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-clamshell",
+    "nameZh": "弹力带蚌式",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-lateral-walk",
+    "nameZh": "弹力带侧向走",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-monster-walk",
+    "nameZh": "弹力带怪兽步",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-squat",
+    "nameZh": "弹力带深蹲",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-donkey-kick",
+    "nameZh": "弹力带后踢腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-fire-hydrant",
+    "nameZh": "弹力带消防栓",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-kickback",
+    "nameZh": "弹力带后踢",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-standing-hip-abduction",
+    "nameZh": "站姿弹力带髋外展",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-seated-hip-abduction",
+    "nameZh": "坐姿弹力带髋外展",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "band-pull-apart",
+    "nameZh": "弹力带拉开",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Band_Pull_Apart",
+    "stepCount": 4
+  },
+  {
+    "slug": "banded-face-pull",
+    "nameZh": "弹力带面拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-row",
+    "nameZh": "弹力带划船",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-lat-pulldown",
+    "nameZh": "弹力带高位下拉",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-pallof-press",
+    "nameZh": "弹力带帕洛夫推",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-woodchop",
+    "nameZh": "弹力带伐木",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "banded-dead-bug",
+    "nameZh": "弹力带死虫",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hollow-body-hold",
+    "nameZh": "空心体支撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hollow-rock",
+    "nameZh": "空心滚动",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "v-up",
+    "nameZh": "两头起",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "flutter-kick",
+    "nameZh": "交替打腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "lying-leg-raise",
+    "nameZh": "仰卧举腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "toe-touch",
+    "nameZh": "仰卧触脚",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "heel-tap",
+    "nameZh": "仰卧触脚跟",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "plank-shoulder-tap",
+    "nameZh": "平板支撑触肩",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "plank-jack",
+    "nameZh": "平板开合跳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "bear-plank",
+    "nameZh": "熊式支撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "bear-crawl",
+    "nameZh": "熊爬",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "crab-walk",
+    "nameZh": "蟹步",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "inchworm",
+    "nameZh": "寸虫",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Inchworm",
+    "stepCount": 5
+  },
+  {
+    "slug": "l-sit-hold",
+    "nameZh": "屈腿支撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "seated-knee-tuck",
+    "nameZh": "坐姿收膝",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "side-plank-hip-dip",
+    "nameZh": "侧支撑沉髋",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "copenhagen-plank",
+    "nameZh": "哥本哈根侧撑",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "dragon-flag",
+    "nameZh": "龙旗",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "burpee",
+    "nameZh": "波比跳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "half-burpee",
+    "nameZh": "半波比",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "squat-thrust",
+    "nameZh": "深蹲冲刺",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "high-knees",
+    "nameZh": "高抬腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "jumping-jack",
+    "nameZh": "开合跳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "skater-hop",
+    "nameZh": "滑冰跳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "lateral-shuffle",
+    "nameZh": "侧向滑步",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "fast-feet",
+    "nameZh": "快频步",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "sprawl",
+    "nameZh": "趴跳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "seal-jack",
+    "nameZh": "海豹开合跳",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cat-cow-stretch",
+    "nameZh": "猫牛式",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "arm-circles",
+    "nameZh": "绕臂",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Arm_Circles",
+    "stepCount": 3
+  },
+  {
+    "slug": "worlds-greatest-stretch",
+    "nameZh": "世界最佳拉伸",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Worlds_Greatest_Stretch",
+    "stepCount": 3
+  },
+  {
+    "slug": "leg-swings-stretch",
+    "nameZh": "前后摆腿",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "torso-twist-stretch",
+    "nameZh": "站姿转体",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "doorway-chest-stretch",
+    "nameZh": "门框胸拉伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "childs-pose",
+    "nameZh": "婴儿式",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Childs_Pose",
+    "stepCount": 3
+  },
+  {
+    "slug": "kneeling-hip-flexor-stretch",
+    "nameZh": "跪姿髋屈肌拉伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "hamstring-stretch",
+    "nameZh": "腘绳肌拉伸",
+    "status": "已采用公有领域文字并译为中文",
+    "sourceId": "Hamstring_Stretch",
+    "stepCount": 3
+  },
+  {
+    "slug": "standing-quad-stretch",
+    "nameZh": "站姿股四头拉伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "seated-forward-fold-stretch",
+    "nameZh": "坐姿体前屈",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "cross-body-shoulder-stretch",
+    "nameZh": "交叉肩拉伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "wall-calf-stretch",
+    "nameZh": "靠墙小腿拉伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  },
+  {
+    "slug": "butterfly-stretch",
+    "nameZh": "蝴蝶拉伸",
+    "status": "无可靠文字匹配",
+    "sourceId": null,
+    "stepCount": 0
+  }
+]

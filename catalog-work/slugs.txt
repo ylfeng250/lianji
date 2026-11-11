@@ -1,0 +1,302 @@
+bench-press|Bench Press
+incline-bench-press|Incline Bench Press
+incline-dumbbell-press|Incline Dumbbell Press
+dumbbell-bench-press|Dumbbell Bench Press
+decline-bench-press|Decline Bench Press
+machine-chest-press|Machine Chest Press
+pec-deck|Pec Deck
+cable-fly|Cable Fly
+push-up|Push-up
+weighted-push-up|Weighted Push-up
+overhead-press|Overhead Press
+seated-dumbbell-press|Dumbbell Seated Shoulder Press
+arnold-press|Arnold Press
+lateral-raise|Lateral Raise
+cable-lateral-raise|Cable Lateral Raise
+front-raise|Front Raise
+rear-delt-fly|Rear Delt Fly
+reverse-pec-deck|Reverse Pec Deck
+face-pull|Face Pull
+upright-row|Upright Row
+deadlift|Deadlift
+romanian-deadlift|Romanian Deadlift
+barbell-row|Barbell Row
+t-bar-row|T-Bar Row
+dumbbell-bent-over-row|Dumbbell Bent Over Row
+one-arm-dumbbell-row|One-Arm Dumbbell Row
+chest-supported-row|Chest Supported Row
+seated-row|Seated Cable Row
+machine-row|Machine Row
+lat-pulldown|Lat Pulldown
+close-grip-lat-pulldown|Close-Grip Lat Pulldown
+straight-arm-pulldown|Straight-Arm Pulldown
+pull-up|Pull-up
+assisted-pull-up|Assisted Pull-up
+weighted-pull-up|Weighted Pull-up
+chin-up|Chin-up
+shrug|Barbell Shrug
+squat|Squat
+front-squat|Front Squat
+hack-squat|Hack Squat
+leg-press|Leg Press
+bulgarian-split-squat|Bulgarian Split Squat
+walking-lunge|Walking Lunge
+step-up|Step-Up
+leg-extension|Leg Extension
+leg-curl|Leg Curl
+seated-leg-curl|Seated Leg Curl
+hip-thrust|Hip Thrust
+glute-bridge|Glute Bridge
+good-morning|Good Morning
+standing-calf-raise|Standing Calf Raise
+seated-calf-raise|Seated Calf Raise
+bicep-curl|Bicep Curl
+hammer-curl|Hammer Curl
+preacher-curl|Preacher Curl
+cable-curl|Cable Curl
+reverse-curl|Reverse Curl
+wrist-curl|Wrist Curl
+tricep-pushdown|Tricep Pushdown
+overhead-tricep-extension|Overhead Tricep Extension
+skull-crusher|Skull Crusher
+close-grip-bench-press|Close-Grip Bench Press
+dip|Dip
+assisted-dip|Assisted Dip
+plank|Plank
+side-plank|Side Plank
+hanging-leg-raise|Hanging Leg Raise
+cable-crunch|Cable Crunch
+ab-wheel|Ab Wheel Rollout
+running|Running
+walking|Walking
+cycling|Cycling
+rowing|Rowing
+stair-climber|Stair Climber
+dumbbell-fly|Dumbbell Fly
+incline-cable-fly|Incline Cable Fly
+decline-dumbbell-press|Decline Dumbbell Press
+smith-machine-bench-press|Smith Machine Bench Press
+landmine-press|Landmine Press
+chest-dip|Chest Dip
+weighted-dip|Weighted Dip
+machine-shoulder-press|Machine Shoulder Press
+standing-dumbbell-press|Standing Dumbbell Press
+push-press|Push Press
+machine-lateral-raise|Machine Lateral Raise
+cable-front-raise|Cable Front Raise
+plate-front-raise|Plate Front Raise
+bent-over-rear-delt-raise|Bent-Over Rear Delt Raise
+cable-rear-delt-fly|Cable Rear Delt Fly
+pendlay-row|Pendlay Row
+inverted-row|Inverted Row
+meadows-row|Meadows Row
+single-arm-cable-row|Single-Arm Cable Row
+wide-grip-lat-pulldown|Wide-Grip Lat Pulldown
+neutral-grip-pull-up|Neutral-Grip Pull-up
+assisted-chin-up|Assisted Chin-up
+weighted-chin-up|Weighted Chin-up
+rack-pull|Rack Pull
+back-extension|Back Extension
+dumbbell-shrug|Dumbbell Shrug
+goblet-squat|Goblet Squat
+smith-machine-squat|Smith Machine Squat
+belt-squat|Belt Squat
+sumo-deadlift|Sumo Deadlift
+trap-bar-deadlift|Trap Bar Deadlift
+lying-leg-curl|Lying Leg Curl
+nordic-hamstring-curl|Nordic Hamstring Curl
+single-leg-romanian-deadlift|Single-Leg Romanian Deadlift
+reverse-lunge|Reverse Lunge
+split-squat|Split Squat
+cable-kickback|Cable Kickback
+hip-abduction-machine|Hip Abduction Machine
+single-leg-glute-bridge|Single-Leg Glute Bridge
+barbell-glute-bridge|Barbell Glute Bridge
+dumbbell-glute-bridge|Dumbbell Glute Bridge
+dumbbell-hip-thrust|Dumbbell Hip Thrust
+smith-machine-hip-thrust|Smith Machine Hip Thrust
+smith-machine-romanian-deadlift|Smith Machine Romanian Deadlift
+dumbbell-romanian-deadlift|Dumbbell Romanian Deadlift
+kettlebell-romanian-deadlift|Kettlebell Romanian Deadlift
+cable-pull-through|Cable Pull-Through
+machine-glute-kickback|Machine Glute Kickback
+cable-standing-hip-abduction|Cable Standing Hip Abduction
+cable-standing-hip-adduction|Cable Standing Hip Adduction
+hip-adduction-machine|Hip Adduction Machine
+smith-machine-bulgarian-split-squat|Smith Machine Bulgarian Split Squat
+smith-machine-reverse-lunge|Smith Machine Reverse Lunge
+smith-machine-split-squat|Smith Machine Split Squat
+heel-elevated-goblet-squat|Heel-Elevated Goblet Squat
+dumbbell-sumo-squat|Dumbbell Sumo Squat
+dumbbell-sumo-deadlift|Dumbbell Sumo Deadlift
+front-foot-elevated-split-squat|Front-Foot Elevated Split Squat
+deficit-reverse-lunge|Deficit Reverse Lunge
+dumbbell-lateral-lunge|Dumbbell Lateral Lunge
+dumbbell-curtsy-lunge|Dumbbell Curtsy Lunge
+landmine-squat|Landmine Squat
+landmine-romanian-deadlift|Landmine Romanian Deadlift
+kettlebell-swing|Kettlebell Swing
+glute-focused-back-extension|Glute-Focused Back Extension
+reverse-hyperextension|Reverse Hyperextension
+donkey-calf-raise|Donkey Calf Raise
+leg-press-calf-raise|Leg Press Calf Raise
+wall-sit|Wall Sit
+jump-squat|Jump Squat
+incline-dumbbell-curl|Incline Dumbbell Curl
+concentration-curl|Concentration Curl
+ez-bar-curl|EZ-Bar Curl
+spider-curl|Spider Curl
+rope-hammer-curl|Rope Hammer Curl
+drag-curl|Drag Curl
+rope-tricep-pushdown|Rope Tricep Pushdown
+dumbbell-skull-crusher|Two Dumbbell Skullcrusher
+single-dumbbell-skullcrusher|Single Dumbbell Skullcrusher
+dumbbell-overhead-tricep-extension|Dumbbell Overhead Tricep Extension
+single-arm-dumbbell-tricep-extension|Single Arm Dumbbell Tricep Extension
+bench-dip|Bench Dip
+tricep-kickback|Tricep Kickback
+wrist-extension|Wrist Extension
+farmer-carry|Farmer Carry
+crunch|Crunch
+reverse-crunch|Reverse Crunch
+russian-twist|Russian Twist
+bicycle-crunch|Bicycle Crunch
+mountain-climber|Mountain Climber
+dead-bug|Dead Bug
+bird-dog|Bird Dog
+pallof-press|Pallof Press
+cable-woodchop|Cable Woodchop
+half-kneeling-pallof-press|Half-Kneeling Pallof Press
+cable-pallof-hold|Cable Pallof Hold
+hanging-knee-raise|Hanging Knee Raise
+captains-chair-knee-raise|Captain's Chair Knee Raise
+decline-sit-up|Decline Sit-Up
+weighted-crunch|Weighted Crunch
+weighted-russian-twist|Weighted Russian Twist
+dumbbell-side-bend|Dumbbell Side Bend
+elliptical|Elliptical
+swimming|Swimming
+jump-rope|Jump Rope
+assault-bike|Assault Bike
+skierg|SkiErg
+hiking|Hiking
+treadmill-incline-walk|Treadmill Incline Walk
+battle-ropes|Battle Ropes
+incline-push-up|Incline Push-up
+knee-push-up|Knee Push-up
+wide-push-up|Wide Push-up
+diamond-push-up|Diamond Push-up
+decline-push-up|Decline Push-up
+pike-push-up|Pike Push-up
+feet-elevated-pike-push-up|Feet-Elevated Pike Push-up
+archer-push-up|Archer Push-up
+typewriter-push-up|Typewriter Push-up
+explosive-push-up|Explosive Push-up
+hindu-push-up|Hindu Push-up
+scapular-push-up|Scapular Push-up
+push-up-shoulder-tap|Push-up Shoulder Tap
+wall-push-up|Wall Push-up
+wall-walk|Wall Walk
+wall-handstand-push-up|Wall Handstand Push-up
+handstand-push-up|Handstand Push-up
+chair-dip|Chair Dip
+doorway-row|Doorway Row
+towel-row|Towel Row
+prone-y-raise|Prone Y Raise
+prone-t-raise|Prone T Raise
+superman|Superman
+superman-hold|Superman Hold
+reverse-snow-angel|Reverse Snow Angel
+dead-hang|Dead Hang
+active-hang|Active Hang
+scapular-pull-up|Scapular Pull-up
+negative-pull-up|Negative Pull-up
+commando-pull-up|Commando Pull-up
+l-sit-pull-up|L-Sit Pull-up
+towel-pull-up|Towel Pull-up
+bodyweight-squat|Bodyweight Squat
+pistol-squat|Pistol Squat
+assisted-pistol-squat|Assisted Pistol Squat
+shrimp-squat|Shrimp Squat
+cossack-squat|Cossack Squat
+sissy-squat|Sissy Squat
+forward-lunge|Forward Lunge
+lateral-lunge|Lateral Lunge
+curtsy-lunge|Curtsy Lunge
+skater-squat|Skater Squat
+single-leg-box-squat|Single-Leg Box Squat
+step-down|Step-Down
+calf-raise|Calf Raise
+single-leg-calf-raise|Single-Leg Calf Raise
+glute-bridge-march|Glute Bridge March
+frog-pump|Frog Pump
+donkey-kick|Donkey Kick
+fire-hydrant|Fire Hydrant
+clamshell|Clamshell
+hip-airplane|Hip Airplane
+side-lying-hip-abduction|Side-Lying Hip Abduction
+side-lying-leg-raise|Side-Lying Leg Raise
+lying-hamstring-walkout|Lying Hamstring Walkout
+towel-hamstring-curl|Towel Hamstring Curl
+stability-ball-hamstring-curl|Stability Ball Hamstring Curl
+banded-glute-bridge|Banded Glute Bridge
+banded-hip-thrust|Banded Hip Thrust
+banded-frog-pump|Banded Frog Pump
+banded-clamshell|Banded Clamshell
+banded-lateral-walk|Banded Lateral Walk
+banded-monster-walk|Banded Monster Walk
+banded-squat|Banded Squat
+banded-donkey-kick|Banded Donkey Kick
+banded-fire-hydrant|Banded Fire Hydrant
+banded-kickback|Banded Kickback
+banded-standing-hip-abduction|Banded Standing Hip Abduction
+banded-seated-hip-abduction|Banded Seated Hip Abduction
+band-pull-apart|Band Pull-Apart
+banded-face-pull|Banded Face Pull
+banded-row|Banded Row
+banded-lat-pulldown|Banded Lat Pulldown
+banded-pallof-press|Banded Pallof Press
+banded-woodchop|Banded Woodchop
+banded-dead-bug|Banded Dead Bug
+hollow-body-hold|Hollow Body Hold
+hollow-rock|Hollow Rock
+v-up|V-Up
+flutter-kick|Flutter Kick
+lying-leg-raise|Lying Leg Raise
+toe-touch|Toe Touch
+heel-tap|Heel Tap
+plank-shoulder-tap|Plank Shoulder Tap
+plank-jack|Plank Jack
+bear-plank|Bear Plank
+bear-crawl|Bear Crawl
+crab-walk|Crab Walk
+inchworm|Inchworm
+l-sit-hold|L-Sit Hold
+seated-knee-tuck|Seated Knee Tuck
+side-plank-hip-dip|Side Plank Hip Dip
+copenhagen-plank|Copenhagen Plank
+dragon-flag|Dragon Flag
+burpee|Burpee
+half-burpee|Half Burpee
+squat-thrust|Squat Thrust
+high-knees|High Knees
+jumping-jack|Jumping Jack
+skater-hop|Skater Hop
+lateral-shuffle|Lateral Shuffle
+fast-feet|Fast Feet
+sprawl|Sprawl
+seal-jack|Seal Jack
+cat-cow-stretch|Cat-Cow Stretch
+arm-circles|Arm Circles
+worlds-greatest-stretch|World's Greatest Stretch
+leg-swings-stretch|Leg Swings
+torso-twist-stretch|Torso Twists
+doorway-chest-stretch|Doorway Chest Stretch
+childs-pose|Child's Pose
+kneeling-hip-flexor-stretch|Kneeling Hip Flexor Stretch
+hamstring-stretch|Hamstring Stretch
+standing-quad-stretch|Standing Quad Stretch
+seated-forward-fold-stretch|Seated Forward Fold
+cross-body-shoulder-stretch|Cross-Body Shoulder Stretch
+wall-calf-stretch|Wall Calf Stretch
+butterfly-stretch|Butterfly Stretch

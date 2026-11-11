@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  动作图只在运行时按名字查找（Resources.getIdentifier），资源压缩看不到静态引用，
+  会把 906 张 ex_* 全部删掉，导致详情页只剩空白框、没有三帧动画。
+  这里显式保留全部动作图；新增素材只要沿用 ex_ 前缀即自动生效。
+-->
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@drawable/ex_*" />
