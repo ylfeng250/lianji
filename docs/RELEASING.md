@@ -137,6 +137,17 @@ adb install -r lianji-1.2.0.apk
 **Q: release 是 debug 签名？**
 没配置 `RELEASE_KEYSTORE_BASE64`。检查 secrets，或看 workflow 的 warning。
 
+**Q: `git push` 报错 `refusing to allow an OAuth App to create or update workflow ... without workflow scope`？**
+用 `gh` 的 OAuth token 通过 HTTPS 推送时，token 缺少 `workflow` scope。二选一：
+
+```bash
+gh auth refresh -h github.com -s workflow   # 重新授权，补上 workflow scope
+# 或把 remote 换成 SSH（SSH key 不受 OAuth scope 限制）
+git remote set-url origin git@github.com:ylfeng250/lianji.git
+```
+
+`gh auth refresh` 会打开浏览器，授权后重试 `git push` 即可。
+
 **Q: 版本号不对？**
 tag 必须是 `v1.2.3`；工作流会用 tag 覆盖 Gradle 默认值。手动跑时也可以传
 `-PappVersionName=1.2.3 -PappVersionCode=10203`。
