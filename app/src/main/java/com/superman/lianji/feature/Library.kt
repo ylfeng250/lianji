@@ -145,7 +145,7 @@ class ExerciseListViewModel(private val container: AppContainer) : ViewModel() {
     private val byName = Comparator<ExerciseSummary> { a, b -> collator.compare(a.nameZh, b.nameZh) }
 
     val exercises = combine(source, stepsOnly, sort) { list, onlySteps, order ->
-        val filtered = if (onlySteps) list.filter { it.hasSteps } else list
+        val filtered = if (onlySteps) list.filter { it.hasDetailedSteps } else list
         when (order) {
             ExerciseSort.NAME -> filtered.sortedWith(byName)
             ExerciseSort.MUSCLE -> filtered.sortedWith(compareBy<ExerciseSummary> { muscleRank(it.muscleZh) }.then(byName))
@@ -552,9 +552,6 @@ private fun ExerciseRow(
                     maxLines = 1,
                     overflow = TextOverflow.Ellipsis,
                 )
-                if (!item.hasSteps) {
-                    Text("只有图示", style = MaterialTheme.typography.labelSmall, color = MaterialTheme.colorScheme.tertiary)
-                }
             }
             if (item.favorite && !selectionMode) {
                 Icon(Icons.Filled.Star, "已收藏", tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(20.dp))
@@ -604,7 +601,7 @@ private fun FilterSheet(
             FilterGroup("训练类型", types, type, onType)
             HorizontalDivider()
             SwitchRow("只看收藏", favoritesOnly, onFavorites)
-            SwitchRow("只看有分步文字", stepsOnly, onSteps)
+            SwitchRow("只看详细步骤（来自 free-exercise-db）", stepsOnly, onSteps)
         }
     }
 }

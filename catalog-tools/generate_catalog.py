@@ -401,6 +401,12 @@ def main() -> None:
                 raise SystemExit(f"{slug} 步骤混入了图片或链接")
             source_id = source_match["sourceId"]
             status = "已采用公有领域文字并译为中文"
+        elif steps:
+            if not 1 <= len(steps) <= 8:
+                raise SystemExit(f"{slug} 原创说明的步骤数量异常：{len(steps)}")
+            if any(re.search(r"https?://|\.jpg|\.png|\.svg", step, re.I) for step in steps):
+                raise SystemExit(f"{slug} 原创说明混入了图片或链接")
+            status = "原创中文说明"
         elif source_match:
             status = "有文字匹配，但中文译文尚未写入"
             steps = []
@@ -461,8 +467,15 @@ def main() -> None:
     for name in ("LICENSE", "LICENSE-ASSETS", "ATTRIBUTION.md"):
         shutil.copyfile(ROOT / "third_party/workout-guide-src" / name, LICENSES / name)
     shutil.copyfile(ROOT / "catalog-work/UNLICENSE.md", LICENSES / "UNLICENSE.md")
-    translated = sum(1 for item in audit if item["stepCount"])
-    print(f"已生成 {len(exercises)} 个动作、{len(list(DRAWABLE.glob('ex_*.xml')))} 帧，其中 {translated} 个带中文步骤")
+    translated = sum(1 for item in audit if item["stepCount"] and item["sourceId"])
+    original = sum(1 for item in audit if item["stepCount"] and not item["sourceId"])
+    missing = [item["slug"] for item in audit if not item["stepCount"]]
+    if missing:
+        raise SystemExit(f"以下动作没有中文说明：{missing[:8]}{' 等' if len(missing) > 8 else ''}")
+    print(
+        f"已生成 {len(exercises)} 个动作、{len(list(DRAWABLE.glob('ex_*.xml')))} 帧，"
+        f"{translated} 个译自 free-exercise-db，{original} 个为原创中文说明"
+    )
 
 
 if __name__ == "__main__":

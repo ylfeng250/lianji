@@ -92,7 +92,7 @@ data class ExerciseSummary(
     val typeZh: String,
     val frame: String,
     val favorite: Boolean,
-    val hasSteps: Boolean,
+    val hasDetailedSteps: Boolean,
 )
 
 data class ExerciseDetail(
@@ -666,7 +666,16 @@ private class CatalogSeeder(private val context: Context, private val database: 
     }
 }
 
-private fun ExerciseEntity.toSummary(favorite: Boolean) = ExerciseSummary(id, nameZh, primaryMuscleZh, equipmentZh, exerciseTypeZh, frameName, favorite, instructionsZh.contains('"'))
+private fun ExerciseEntity.toSummary(favorite: Boolean) = ExerciseSummary(
+    id = id,
+    nameZh = nameZh,
+    muscleZh = primaryMuscleZh,
+    equipmentZh = equipmentZh,
+    typeZh = exerciseTypeZh,
+    frame = frameName,
+    favorite = favorite,
+    hasDetailedSteps = instructionSourceId != null,
+)
 
 private fun ExerciseEntity.toDetail(favorite: Boolean) = ExerciseDetail(id, nameZh, nameEn, primaryMuscleZh, secondaryZh, equipmentZh, exerciseTypeZh, exerciseType, isStretch, allFrames.split(" ").filter { it.isNotBlank() }, runCatching { Json.decodeFromString<List<String>>(instructionsZh) }.getOrDefault(emptyList()), instructionSourceId, favorite)
 

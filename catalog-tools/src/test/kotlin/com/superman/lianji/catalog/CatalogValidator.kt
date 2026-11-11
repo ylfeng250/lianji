@@ -25,5 +25,7 @@ class CatalogValidator {
         val names = Regex("\"nameZh\"\\s*:\\s*\"([^\"]+)\"").findAll(catalog).map { it.groupValues[1] }.toList()
         assertEquals(302, names.size)
         names.forEach { assertFalse(it.contains(Regex("[A-Za-z]"))) }
+        assertEquals(302, Regex("\"instructionsZh\"\\s*:\\s*\\[").findAll(catalog).count())
+        assertFalse(Regex("\"instructionsZh\"\\s*:\\s*\\[\\s*\\]").containsMatchIn(catalog))
     }
 }

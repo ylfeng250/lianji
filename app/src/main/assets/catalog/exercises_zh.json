@@ -33,7 +33,11 @@
         "ex_bench_press_2",
         "ex_bench_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧在平板凳上，双脚踩稳地面，肩胛骨向后向下收，握距略宽于肩。",
+        "把杠铃下放到胸骨中下部，前臂尽量垂直地面，肘部不要过度外展。",
+        "双脚蹬地，把杠铃推回起始位，保持肩胛稳定，不要耸肩或拱腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -215,7 +219,11 @@
         "ex_machine_chest_press_2",
         "ex_machine_chest_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整座椅，让握把与胸部中部齐平，背部贴紧靠垫，肩胛后收。",
+        "握住把手向前推，肘部保持略微弯曲，推到手臂接近伸直。",
+        "控制配重回放，不要让配重片撞击，胸口保持打开。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -348,7 +356,11 @@
         "ex_weighted_push_up_2",
         "ex_weighted_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "在标准俯卧撑姿势下，把杠铃片或负重背心稳定放在上背部。",
+        "身体从头到脚保持一条直线，屈肘下放至胸部接近地面。",
+        "推起回到起始位，核心和臀部持续收紧，避免塌腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -410,7 +422,11 @@
         "ex_seated_dumbbell_press_2",
         "ex_seated_dumbbell_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐在有靠背的凳子上，双手持哑铃举到肩部两侧，掌心向前。",
+        "向上推起哑铃，手臂接近伸直，手腕保持中立。",
+        "控制下放到肩高，肘部略低于肩，避免用腰借力。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -437,7 +453,11 @@
         "ex_arnold_press_2",
         "ex_arnold_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿，双手持哑铃于胸前，掌心朝向自己，肘部靠近身体。",
+        "向上推起的同时把前臂外旋，顶部掌心向前。",
+        "沿原路下放并转回掌心朝向自己，控制节奏。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -496,7 +516,11 @@
         "ex_cable_lateral_raise_2",
         "ex_cable_lateral_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对绳索站立，用外侧手握住低位把手，身体保持稳定。",
+        "肘部微屈，把手臂向侧上方抬到与肩同高。",
+        "缓慢下放，避免耸肩和甩动身体，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -589,7 +613,11 @@
         "ex_reverse_pec_deck_2",
         "ex_reverse_pec_deck_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面向靠背坐下，胸部贴垫，双手握住把手，肘部微屈。",
+        "用肩后束发力把手臂向两侧后方打开，肩胛骨收紧。",
+        "控制回放到起始位，不要借助身体摆动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -620,7 +648,11 @@
         "ex_face_pull_2",
         "ex_face_pull_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把绳索调到面部高度，双手握住绳端，手臂向前伸直。",
+        "向面部方向拉动绳索，同时把双手向两侧分开，肘部抬高。",
+        "在末端稍停并外旋肩部，再缓慢回放，保持躯干稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -797,7 +829,11 @@
         "ex_t_bar_row_2",
         "ex_t_bar_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站在 T 把上方，屈髋俯身，背部平直，双手握住把手。",
+        "把把手拉向下腹部，肘部贴近身体，肩胛骨向后收。",
+        "控制下放到手臂伸直，保持躯干角度不变。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -828,7 +864,11 @@
         "ex_dumbbell_bent_over_row_2",
         "ex_dumbbell_bent_over_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚与髋同宽，屈髋俯身约 45 度，双手持哑铃垂在肩下。",
+        "把哑铃拉向髋部，肘部沿身体侧面移动。",
+        "控制下放至手臂伸直，背部保持平直，不要耸肩。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -894,7 +934,11 @@
         "ex_chest_supported_row_2",
         "ex_chest_supported_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整器械，让胸部贴住靠垫，双手握住把手。",
+        "把把手拉向身体两侧，肘部向后，肩胛骨收紧。",
+        "缓慢回放到手臂伸直，胸口始终贴住靠垫。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -925,7 +969,11 @@
         "ex_seated_row_2",
         "ex_seated_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐在划船器上，双脚踩稳踏板，双手握住把手，背部挺直。",
+        "把把手拉向腹部，肘部贴近身体，肩胛骨向后收。",
+        "控制回放到手臂伸直，不要用腰部前后晃动借力。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -952,7 +1000,11 @@
         "ex_machine_row_2",
         "ex_machine_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整座椅和胸垫，让胸部贴住靠垫，双手握住把手。",
+        "向后拉把手，肘部贴近身体，肩胛骨向中间收紧。",
+        "控制回放到手臂接近伸直，保持胸口贴垫。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -979,7 +1031,11 @@
         "ex_lat_pulldown_2",
         "ex_lat_pulldown_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐稳并固定大腿，双手宽握横杆，肩胛骨先向下沉。",
+        "把横杆拉向锁骨附近，肘部向下向后，胸口保持挺起。",
+        "控制回放到手臂伸直，不要后仰甩动或耸肩。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1006,7 +1062,11 @@
         "ex_close_grip_lat_pulldown_2",
         "ex_close_grip_lat_pulldown_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐稳，双手窄握 V 形把手，肩胛骨下沉。",
+        "把把手拉向胸口，肘部向下，动作幅度保持完整。",
+        "缓慢回放到手臂伸直，躯干保持稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1103,7 +1163,11 @@
         "ex_assisted_pull_up_2",
         "ex_assisted_pull_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "根据能力设置辅助重量，双手正握把手，身体稳定。",
+        "肩胛骨下沉，把身体拉到下巴超过把手。",
+        "控制下放到手臂伸直，避免摆荡，换组时再调整辅助。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1130,7 +1194,11 @@
         "ex_weighted_pull_up_2",
         "ex_weighted_pull_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "系好负重带或穿负重背心，双手正握单杠。",
+        "肩胛骨下沉，把身体拉到下巴超过横杠。",
+        "控制下放到手臂伸直，保持核心收紧，避免踢腿借力。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1376,7 +1444,11 @@
         "ex_bulgarian_split_squat_2",
         "ex_bulgarian_split_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "后脚脚背放在凳上，前脚向前站到合适距离，双手持哑铃。",
+        "屈膝下蹲，前腿大腿接近平行地面，膝盖朝脚尖方向。",
+        "前脚发力站起，保持躯干稳定，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1407,7 +1479,11 @@
         "ex_walking_lunge_2",
         "ex_walking_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手持哑铃自然下垂，向前迈出一步，保持躯干直立。",
+        "下蹲到前后膝约 90 度，前膝不内扣，后膝接近地面。",
+        "前脚蹬地起身并迈出下一步，交替向前行走。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1810,7 +1886,11 @@
         "ex_cable_curl_2",
         "ex_cable_curl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面对绳索站立，双手握住低位直杆或弯杆，肘部贴近身体。",
+        "屈肘把把手弯举到胸前，上臂保持不动。",
+        "控制下放到手臂接近伸直，避免身体后仰借力。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1864,7 +1944,11 @@
         "ex_wrist_curl_2",
         "ex_wrist_curl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿，前臂放在大腿上，掌心向上握住杠铃或哑铃。",
+        "只用手腕把重量向上卷起，前臂保持贴腿。",
+        "缓慢下放到手腕伸展，动作幅度小而可控。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -1924,7 +2008,11 @@
         "ex_overhead_tricep_extension_2",
         "ex_overhead_tricep_extension_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "背对绳索站立，双手握住绳端并举过头顶，肘部朝前。",
+        "保持上臂不动，伸肘把绳索向前上方拉直。",
+        "控制屈肘回到头后，肘部不要向外散开。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2025,7 +2113,11 @@
         "ex_dip_2",
         "ex_dip_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手撑住双杠，手臂伸直支撑身体，肩胛骨下沉。",
+        "屈肘下放身体，肘部向后，下降到肩部略低于肘。",
+        "推起回到起始位，身体保持稳定，不要耸肩。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2052,7 +2144,11 @@
         "ex_assisted_dip_2",
         "ex_assisted_dip_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "设置辅助重量，双手撑住把手，膝盖放在辅助垫上。",
+        "屈肘下放到舒适深度，肘部向后。",
+        "推起回到手臂伸直，控制节奏，避免借助反弹。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2109,7 +2205,11 @@
         "ex_side_plank_2",
         "ex_side_plank_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧卧，肘部位于肩正下方，前臂撑地，双脚叠放。",
+        "收紧核心把髋部抬离地面，身体从头到脚成一条直线。",
+        "保持自然呼吸，按时间结束后换另一侧。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2229,7 +2329,11 @@
         "ex_running_2",
         "ex_running_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "先快走或慢跑几分钟热身，让心率和关节逐渐进入状态。",
+        "保持躯干直立、步幅自然，用能维持的配速跑完计划距离。",
+        "结束后慢走几分钟并做小腿、髋部放松，记录距离和时长。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2256,7 +2360,11 @@
         "ex_walking_2",
         "ex_walking_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "保持抬头、肩部放松，手臂自然摆动。",
+        "用能持续对话的节奏行走，必要时调整坡度或速度。",
+        "结束时逐渐减速，记录距离和时长。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2283,7 +2391,11 @@
         "ex_cycling_2",
         "ex_cycling_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整座高，让踩到最低点时膝盖保持轻微弯曲。",
+        "用平稳的踏频骑行，核心稳定，手肘微屈。",
+        "按计划调整阻力或时长，结束时低速放松几分钟。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2314,7 +2426,11 @@
         "ex_rowing_2",
         "ex_rowing_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐稳，双脚固定，先屈膝前倾抓住把手。",
+        "先用腿蹬伸，再把躯干直立，最后把把手拉向胸骨下方。",
+        "按相反顺序回放：手臂伸直、躯干前倾、屈膝复位。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2341,7 +2457,11 @@
         "ex_stair_climber_2",
         "ex_stair_climber_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚踩稳踏板，身体保持直立，双手轻扶把手。",
+        "用稳定的节奏交替踩踏，避免把体重压在把手上。",
+        "按计划时间完成后逐渐降速，放松小腿和髋部。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2401,7 +2521,11 @@
         "ex_incline_cable_fly_2",
         "ex_incline_cable_fly_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把上斜凳放在绳索中间，双手握住把手，肘部微屈。",
+        "以胸部发力，把双手向中间夹拢，手腕保持中立。",
+        "控制回放到胸部有拉伸感，不要耸肩或过度伸展。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2432,7 +2556,11 @@
         "ex_decline_dumbbell_press_2",
         "ex_decline_dumbbell_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "固定双腿坐在下斜凳上，双手持哑铃举到胸部两侧。",
+        "下放哑铃到肘部略低于躯干，肩胛骨保持后收。",
+        "推起哑铃到手臂接近伸直，控制下放，不要拱腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2500,7 +2628,11 @@
         "ex_landmine_press_2",
         "ex_landmine_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把杠铃一端固定在地雷架，双手托住杠铃另一端置于肩前。",
+        "沿斜上方推起杠铃，手臂接近伸直，核心收紧。",
+        "控制下放到肩前，保持躯干稳定，不要过度后仰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2567,7 +2699,11 @@
         "ex_weighted_dip_2",
         "ex_weighted_dip_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "系好负重带或穿负重背心，双手撑住双杠。",
+        "屈肘下放到肩部略低于肘，身体保持稳定。",
+        "推起回到手臂伸直，控制节奏，避免弹震。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2594,7 +2730,11 @@
         "ex_machine_shoulder_press_2",
         "ex_machine_shoulder_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整座椅，让握把与肩同高，背部贴紧靠垫。",
+        "向上推起把手，手臂接近伸直，手腕保持中立。",
+        "控制下放到肩高，避免耸肩或腰部离垫。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2660,7 +2800,11 @@
         "ex_push_press_2",
         "ex_push_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "杠铃放在锁骨前，双脚与肩同宽，核心收紧。",
+        "微微屈膝下蹲，快速蹬伸把杠铃推过头顶。",
+        "缓冲落回锁骨前，重新稳定后再做下一次。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2687,7 +2831,11 @@
         "ex_machine_lateral_raise_2",
         "ex_machine_lateral_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整座椅，让肘部垫与肩同高，前臂贴住外侧垫。",
+        "以肩部发力把肘部向侧上方抬起。",
+        "控制下放，避免耸肩或借助身体摆动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2714,7 +2862,11 @@
         "ex_cable_front_raise_2",
         "ex_cable_front_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "背对绳索站立，单手握住低位把手，手臂自然下垂。",
+        "保持肘部微屈，把手臂向前抬到与肩同高。",
+        "缓慢下放，躯干保持稳定，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2741,7 +2893,11 @@
         "ex_plate_front_raise_2",
         "ex_plate_front_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手握住杠铃片置于体前，手臂自然下垂。",
+        "保持肘部微屈，把杠铃片向前抬到肩高。",
+        "控制下放，不要用腰部后仰借力。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2768,7 +2924,11 @@
         "ex_bent_over_rear_delt_raise_2",
         "ex_bent_over_rear_delt_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "屈髋俯身，背部平直，双手持哑铃垂在肩下。",
+        "肘部微屈，把哑铃向两侧抬起，肩胛骨保持稳定。",
+        "控制下放到起始位，避免甩动身体。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2831,7 +2991,11 @@
         "ex_pendlay_row_2",
         "ex_pendlay_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "杠铃放在地面，屈髋俯身，双手握住杠铃，背部平直。",
+        "爆发式把杠铃拉向下腹部，肘部贴近身体。",
+        "控制杠铃回到地面，每次重新稳定后再拉。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2899,7 +3063,11 @@
         "ex_meadows_row_2",
         "ex_meadows_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把杠铃一端固定在地雷架，侧身站在杠铃旁，单手握把。",
+        "屈髋俯身，把杠铃拉向髋部，肘部贴身。",
+        "控制下放，完成一侧后换手，躯干保持稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2930,7 +3098,11 @@
         "ex_single_arm_cable_row_2",
         "ex_single_arm_cable_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对绳索站立，单手握住把手，另一手扶住固定物。",
+        "把把手拉向髋部，肘部贴近身体，肩胛骨后收。",
+        "控制回放到手臂伸直，避免身体旋转，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -2995,7 +3167,11 @@
         "ex_neutral_grip_pull_up_2",
         "ex_neutral_grip_pull_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手对握把手，身体自然悬垂，核心收紧。",
+        "肩胛骨下沉，把身体拉到下巴超过把手。",
+        "控制下放到手臂伸直，避免摆荡和踢腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3022,7 +3198,11 @@
         "ex_assisted_chin_up_2",
         "ex_assisted_chin_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "设置辅助重量，双手反握把手，身体稳定。",
+        "肩胛骨下沉，把身体拉到下巴超过把手。",
+        "控制下放到手臂伸直，保持躯干稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3049,7 +3229,11 @@
         "ex_weighted_chin_up_2",
         "ex_weighted_chin_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "系好负重，双手反握单杠，身体自然悬垂。",
+        "把身体拉到下巴超过横杠，肘部向下。",
+        "控制下放到手臂伸直，避免借助摆动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3080,7 +3264,11 @@
         "ex_rack_pull_2",
         "ex_rack_pull_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把杠铃放在膝上高度的安全架上，双手握杠，背部平直。",
+        "髋部发力站起，把杠铃拉到髋部锁定位置。",
+        "控制下放回架上，保持杠铃贴近身体。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3250,7 +3438,11 @@
         "ex_belt_squat_2",
         "ex_belt_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站上腰带深蹲机，系好腰带，双脚与肩同宽。",
+        "屈膝下蹲到舒适深度，膝盖朝脚尖方向。",
+        "伸膝站起，保持躯干稳定，不要锁死膝盖。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3349,7 +3541,11 @@
         "ex_lying_leg_curl_2",
         "ex_lying_leg_curl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯卧在腿弯举机上，脚踝勾住滚垫，膝盖对准转轴。",
+        "屈膝把滚垫拉向臀部，髋部保持贴垫。",
+        "控制伸膝回放，不要让配重片撞击。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3380,7 +3576,11 @@
         "ex_nordic_hamstring_curl_2",
         "ex_nordic_hamstring_curl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "跪姿，脚踝固定在器械或由同伴压住，身体从膝到肩成一条线。",
+        "收紧腘绳肌，缓慢让身体向前倾，速度越慢越好。",
+        "在可控范围内用手撑地，再推回起始位，不要直接塌下。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3411,7 +3611,11 @@
         "ex_single_leg_romanian_deadlift_2",
         "ex_single_leg_romanian_deadlift_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，双手持哑铃，另一条腿微微离地。",
+        "屈髋把哑铃沿支撑腿下放，背部保持平直。",
+        "支撑腿臀部和腘绳肌发力站起，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3442,7 +3646,11 @@
         "ex_reverse_lunge_2",
         "ex_reverse_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手持哑铃站立，向后撤一步，前脚站稳。",
+        "屈膝下蹲到前后膝约 90 度，前膝朝脚尖方向。",
+        "前脚蹬地回到站姿，换腿重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3473,7 +3681,11 @@
         "ex_split_squat_2",
         "ex_split_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "前后分腿站立，双手持哑铃自然下垂。",
+        "屈膝下蹲到前腿大腿接近平行，后膝接近地面。",
+        "前脚发力站起，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3500,7 +3712,11 @@
         "ex_cable_kickback_2",
         "ex_cable_kickback_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面向绳索站立，脚踝套上踝带，双手扶住固定物。",
+        "保持膝盖微屈，把腿向后踢到臀部收紧。",
+        "控制回放，不要用腰部摆动，换腿重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3527,7 +3743,11 @@
         "ex_hip_abduction_machine_2",
         "ex_hip_abduction_machine_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐稳在髋外展机上，双膝抵住外侧垫，背部贴靠背。",
+        "用臀部外侧发力把双膝向外打开。",
+        "控制回放到起始位，避免用身体晃动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3625,7 +3845,11 @@
         "ex_dumbbell_glute_bridge_2",
         "ex_dumbbell_glute_bridge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧屈膝，双脚踩地，把哑铃或杠铃片稳定放在髋部。",
+        "收紧臀部把髋部抬起，直到肩、髋、膝接近一条直线。",
+        "在顶部挤压臀部，再控制下放，不要用腰部过度顶起。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3652,7 +3876,11 @@
         "ex_dumbbell_hip_thrust_2",
         "ex_dumbbell_hip_thrust_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "上背部靠在长凳边缘，哑铃放在髋部，双脚踩稳。",
+        "收紧臀部把髋部推到躯干与大腿接近平行。",
+        "控制下放，保持下巴微收，不要过度伸展腰椎。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3683,7 +3911,11 @@
         "ex_smith_machine_hip_thrust_2",
         "ex_smith_machine_hip_thrust_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "上背部靠在凳上，杠铃杆对准髋部并垫好护垫，双脚踩稳。",
+        "收紧臀部把髋部向上推，直到躯干与大腿接近平行。",
+        "控制下放到起始位，膝盖保持朝脚尖方向。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3714,7 +3946,11 @@
         "ex_smith_machine_romanian_deadlift_2",
         "ex_smith_machine_romanian_deadlift_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站在史密斯机内，杠铃杆贴近大腿，双手握杠。",
+        "屈髋向后推臀，让杠铃沿腿下放到小腿中段，背部平直。",
+        "臀部和腘绳肌发力站起，杠铃始终贴近身体。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3745,7 +3981,11 @@
         "ex_dumbbell_romanian_deadlift_2",
         "ex_dumbbell_romanian_deadlift_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手持哑铃站在体前，膝盖微屈，背部平直。",
+        "屈髋向后推臀，让哑铃沿腿下放，感受腘绳肌拉伸。",
+        "收紧臀部站起，不要用腰部代偿，哑铃贴近身体。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3776,7 +4016,11 @@
         "ex_kettlebell_romanian_deadlift_2",
         "ex_kettlebell_romanian_deadlift_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手握住壶铃把手，站在体前，膝盖微屈。",
+        "屈髋把壶铃沿腿下放，背部保持平直，肩胛稳定。",
+        "臀部和腘绳肌发力站起，壶铃贴近身体。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3807,7 +4051,11 @@
         "ex_cable_pull_through_2",
         "ex_cable_pull_through_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "背对绳索站立，绳索从胯下穿过，双手握住绳端。",
+        "屈髋向后推臀，让绳索向后，背部保持平直。",
+        "收紧臀部站起，顶端夹紧臀部，不要用手臂拉。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3834,7 +4082,11 @@
         "ex_machine_glute_kickback_2",
         "ex_machine_glute_kickback_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯身或站姿固定在器械上，一只脚抵住踏板。",
+        "保持膝盖微屈，用臀部发力把腿向后蹬。",
+        "控制回放，不要用腰部摆动，换腿重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3861,7 +4113,11 @@
         "ex_cable_standing_hip_abduction_2",
         "ex_cable_standing_hip_abduction_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对绳索站立，脚踝套上踝带，手扶固定物。",
+        "保持躯干直立，把外侧腿向侧方抬起。",
+        "控制回放，避免身体倾斜，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3892,7 +4148,11 @@
         "ex_cable_standing_hip_adduction_2",
         "ex_cable_standing_hip_adduction_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对绳索站立，内侧脚踝套上踝带，手扶固定物。",
+        "保持腿伸直，把腿向身体中线内收。",
+        "控制回放，躯干保持稳定，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3919,7 +4179,11 @@
         "ex_hip_adduction_machine_2",
         "ex_hip_adduction_machine_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐稳在髋内收机上，双膝抵住内侧垫，背部贴靠背。",
+        "用大腿内侧发力把双膝向中间夹拢。",
+        "控制回放到起始位，避免用身体晃动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3950,7 +4214,11 @@
         "ex_smith_machine_bulgarian_split_squat_2",
         "ex_smith_machine_bulgarian_split_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "后脚脚背放在凳上，前脚站到合适距离，杠铃放在上背。",
+        "屈膝下蹲，前腿大腿接近平行，膝盖朝脚尖方向。",
+        "前脚发力站起，保持躯干稳定，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -3985,7 +4253,11 @@
         "ex_smith_machine_reverse_lunge_2",
         "ex_smith_machine_reverse_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "杠铃放在上背，双脚与髋同宽站立。",
+        "向后撤一步并下蹲，前膝朝脚尖方向。",
+        "前脚蹬地回到站姿，换腿重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4016,7 +4288,11 @@
         "ex_smith_machine_split_squat_2",
         "ex_smith_machine_split_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "前后分腿站在杠铃下，杠铃放在上背。",
+        "屈膝下蹲到前腿大腿接近平行。",
+        "前脚发力站起，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4047,7 +4323,11 @@
         "ex_heel_elevated_goblet_squat_2",
         "ex_heel_elevated_goblet_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把脚跟垫高，双手在胸前托住哑铃或壶铃。",
+        "保持躯干直立，屈膝下蹲到舒适深度。",
+        "脚掌发力站起，膝盖始终朝脚尖方向。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4082,7 +4362,11 @@
         "ex_dumbbell_sumo_squat_2",
         "ex_dumbbell_sumo_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚宽于肩、脚尖外展，双手在体前握住一只哑铃。",
+        "屈膝下蹲，膝盖朝脚尖方向，躯干保持直立。",
+        "脚掌发力站起，顶端收紧臀部。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4117,7 +4401,11 @@
         "ex_dumbbell_sumo_deadlift_2",
         "ex_dumbbell_sumo_deadlift_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚宽站，哑铃放在身体中线，屈髋俯身握住哑铃。",
+        "背部平直，屈髋屈膝把哑铃沿腿拉起。",
+        "站直后控制下放，保持哑铃贴近身体。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4148,7 +4436,11 @@
         "ex_front_foot_elevated_split_squat_2",
         "ex_front_foot_elevated_split_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "前脚踩在低垫上，后脚向后，双手持哑铃。",
+        "屈膝下蹲，前腿大腿接近平行，前膝朝脚尖方向。",
+        "前脚发力站起，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4183,7 +4475,11 @@
         "ex_deficit_reverse_lunge_2",
         "ex_deficit_reverse_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站在低台上，双手持哑铃，向后撤一步踩到地面。",
+        "屈膝下蹲，让前腿承受主要重量，前膝朝脚尖方向。",
+        "前脚蹬地回到台上，换腿重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4218,7 +4514,11 @@
         "ex_dumbbell_lateral_lunge_2",
         "ex_dumbbell_lateral_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手持哑铃站立，向一侧跨出一大步。",
+        "屈膝下蹲，臀部向后，另一条腿保持伸直。",
+        "跨出腿发力推回站姿，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4253,7 +4553,11 @@
         "ex_dumbbell_curtsy_lunge_2",
         "ex_dumbbell_curtsy_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手持哑铃站立，一条腿从身体后方交叉撤步。",
+        "屈膝下蹲，保持前膝朝脚尖方向。",
+        "前脚发力回到站姿，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4284,7 +4588,11 @@
         "ex_landmine_squat_2",
         "ex_landmine_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把杠铃一端固定在地雷架，双手托住另一端置于胸前。",
+        "双脚与肩同宽，屈膝下蹲，躯干保持直立。",
+        "脚掌发力站起，控制下放，不要弯腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4315,7 +4623,11 @@
         "ex_landmine_romanian_deadlift_2",
         "ex_landmine_romanian_deadlift_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对地雷架站立，双手握住杠铃末端，杠铃贴近身体。",
+        "屈髋向后推臀，让杠铃沿腿下放，背部平直。",
+        "臀部和腘绳肌发力站起，控制节奏。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4350,7 +4662,11 @@
         "ex_kettlebell_swing_2",
         "ex_kettlebell_swing_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚略宽于肩，壶铃放在体前，屈髋握住把手。",
+        "把壶铃向后摆到两腿之间，随即爆发式伸髋。",
+        "让壶铃自然摆到胸高，控制回摆，不要用手臂抬。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4381,7 +4697,11 @@
         "ex_glute_focused_back_extension_2",
         "ex_glute_focused_back_extension_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整山羊挺身凳，让髋部能自由折叠，双脚外展。",
+        "保持上背自然，臀部和腘绳肌发力抬起躯干。",
+        "抬到身体成一条线即可，顶端夹臀，不要过度后仰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4440,7 +4760,11 @@
         "ex_donkey_calf_raise_2",
         "ex_donkey_calf_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "前脚掌踩在踏板上，脚跟悬空，身体前倾扶住器械。",
+        "脚跟尽量下沉感受小腿拉伸，再踮起脚尖。",
+        "顶端停顿，控制下放，避免弹震。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4462,7 +4786,11 @@
         "ex_leg_press_calf_raise_2",
         "ex_leg_press_calf_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐在腿举机上，前脚掌踩住踏板边缘，膝盖微屈。",
+        "用小腿发力把踏板向前推，脚跟抬高。",
+        "控制回放到脚跟低于脚尖，不要锁死膝盖。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4493,7 +4821,11 @@
         "ex_wall_sit_2",
         "ex_wall_sit_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "背靠墙站立，双脚向前走到大腿与地面平行。",
+        "膝盖约 90 度，膝盖朝脚尖方向，背部贴墙。",
+        "保持自然呼吸，按时间结束，不要憋气。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4524,7 +4856,11 @@
         "ex_jump_squat_2",
         "ex_jump_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚与肩同宽，屈膝下蹲到半蹲位置。",
+        "快速伸髋伸膝跳起，落地时屈膝缓冲。",
+        "落地后重新稳定再跳，膝盖始终朝脚尖方向。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4684,7 +5020,11 @@
         "ex_rope_hammer_curl_2",
         "ex_rope_hammer_curl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面对绳索站立，双手握住绳端，掌心相对。",
+        "肘部贴近身体，屈肘把绳端弯举到胸前。",
+        "控制下放，保持上臂不动，不要后仰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4743,7 +5083,11 @@
         "ex_rope_tricep_pushdown_2",
         "ex_rope_tricep_pushdown_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面对绳索站立，双手握住绳端，肘部固定在身体两侧。",
+        "伸肘把绳索向下压，末端把绳端向两侧分开。",
+        "控制屈肘回到起始位，上臂保持不动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4770,7 +5114,11 @@
         "ex_dumbbell_skull_crusher_2",
         "ex_dumbbell_skull_crusher_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧在凳上，双手持哑铃举到胸部上方。",
+        "保持上臂不动，屈肘把哑铃下放到头部两侧。",
+        "伸肘回到起始位，肘部不要向外散开。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4797,7 +5145,11 @@
         "ex_single_dumbbell_skullcrusher_2",
         "ex_single_dumbbell_skullcrusher_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧在凳上，双手托住一只哑铃举到胸部上方。",
+        "保持上臂稳定，屈肘把哑铃下放到头后。",
+        "伸肘推回起始位，控制节奏。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4824,7 +5176,11 @@
         "ex_dumbbell_overhead_tricep_extension_2",
         "ex_dumbbell_overhead_tricep_extension_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿或站姿，双手托住哑铃举过头顶。",
+        "保持上臂靠近耳朵，屈肘把哑铃下放到头后。",
+        "伸肘回到起始位，核心收紧，不要拱腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4851,7 +5207,11 @@
         "ex_single_arm_dumbbell_tricep_extension_2",
         "ex_single_arm_dumbbell_tricep_extension_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单手托住哑铃举过头顶，另一手可扶住上臂。",
+        "保持上臂稳定，屈肘把哑铃下放到头后。",
+        "伸肘回到起始位，完成一侧后换手。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4882,7 +5242,11 @@
         "ex_bench_dip_2",
         "ex_bench_dip_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手撑在凳子边缘，手指朝前，双脚向前伸出。",
+        "屈肘下放身体，肘部向后，肩部下沉。",
+        "推起回到手臂伸直，身体贴近凳子，避免耸肩。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4909,7 +5273,11 @@
         "ex_tricep_kickback_2",
         "ex_tricep_kickback_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "屈髋俯身，一只手扶住固定物，另一手持哑铃，肘部贴近身体。",
+        "保持上臂不动，伸肘把哑铃向后上方踢出。",
+        "控制屈肘回放，完成一侧后换手。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -4931,7 +5299,11 @@
         "ex_wrist_extension_2",
         "ex_wrist_extension_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿，前臂放在大腿上，掌心向下握住哑铃。",
+        "只用手腕把重量向上抬起，前臂保持贴腿。",
+        "控制下放到手腕低于水平，动作幅度小而稳。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5190,7 +5562,11 @@
         "ex_bird_dog_2",
         "ex_bird_dog_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，手在肩下、膝在髋下，核心收紧。",
+        "同时向前伸直一侧手臂、向后伸直对侧腿。",
+        "保持骨盆稳定，缓慢收回，换另一侧。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5251,7 +5627,11 @@
         "ex_cable_woodchop_2",
         "ex_cable_woodchop_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对绳索站立，双手握住高位把手，双脚踩稳。",
+        "用核心带动，把把手沿斜线拉向对侧髋部，同时转动躯干。",
+        "控制回到起始位，避免只用手臂拉，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5282,7 +5662,11 @@
         "ex_half_kneeling_pallof_press_2",
         "ex_half_kneeling_pallof_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单膝跪地，绳索或弹力带固定在胸部高度，双手握把置于胸前。",
+        "收紧核心，把双手向前推直，抵抗躯干旋转。",
+        "保持数秒后收回，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5313,7 +5697,11 @@
         "ex_cable_pallof_hold_2",
         "ex_cable_pallof_hold_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对绳索站立，双手握把置于胸前，双脚与肩同宽。",
+        "把双手向前推直，保持躯干不旋转。",
+        "持续收紧核心并自然呼吸，按时间结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5340,7 +5728,11 @@
         "ex_hanging_knee_raise_2",
         "ex_hanging_knee_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手正握单杠悬垂，肩胛骨下沉，核心收紧。",
+        "屈膝把膝盖抬向胸部，骨盆微微后倾。",
+        "控制下放到起始位，避免身体前后摆荡。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5367,7 +5759,11 @@
         "ex_captains_chair_knee_raise_2",
         "ex_captains_chair_knee_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "前臂放在卷腹凳的靠垫上，背部贴垫，双脚离地。",
+        "屈膝把膝盖抬向胸部，腹部收紧。",
+        "控制下放，避免用惯性甩腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5394,7 +5790,11 @@
         "ex_decline_sit_up_2",
         "ex_decline_sit_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "固定双脚坐在下斜凳上，双手放在胸前或耳侧。",
+        "用腹部发力把躯干卷起，背部逐节离开凳子。",
+        "控制下放到起始位，不要用手拉头。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5416,7 +5816,11 @@
         "ex_weighted_crunch_2",
         "ex_weighted_crunch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧屈膝，把杠铃片或哑铃抱在胸前。",
+        "用腹部发力把肩胛骨卷离地面，下背保持贴地。",
+        "顶端呼气收紧，再控制下放。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5443,7 +5847,11 @@
         "ex_weighted_russian_twist_2",
         "ex_weighted_russian_twist_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿屈膝，双脚可着地或离地，双手抱重物在胸前。",
+        "保持躯干直立，把重物转向身体一侧。",
+        "控制转向另一侧，避免只用手臂摆动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5502,7 +5910,11 @@
         "ex_elliptical_2",
         "ex_elliptical_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚踩稳踏板，双手握住活动把手，身体保持直立。",
+        "用腿和手臂协调推动，保持稳定节奏。",
+        "按计划调整阻力或时间，结束时逐渐降速。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5533,7 +5945,11 @@
         "ex_swimming_2",
         "ex_swimming_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "先做几分钟陆上热身，下水后从轻松游开始。",
+        "保持呼吸节奏和身体流线，按计划距离分段完成。",
+        "结束时放慢速度，做肩部和髋部放松。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5564,7 +5980,11 @@
         "ex_jump_rope_2",
         "ex_jump_rope_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整绳长，双脚踩住绳中间时手柄大约到腋下。",
+        "用手腕摇绳，前脚掌轻跳，落地保持膝盖微屈。",
+        "保持稳定节奏，先慢后快，按时间结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5595,7 +6015,11 @@
         "ex_assault_bike_2",
         "ex_assault_bike_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "调整座椅和把手，让骑行时膝盖保持轻微弯曲。",
+        "手脚同时发力，保持躯干稳定，按计划节奏蹬踏。",
+        "结束时降低速度，做几分钟放松。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5630,7 +6054,11 @@
         "ex_skierg_2",
         "ex_skierg_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚与肩同宽，双手握住把手，膝盖微屈。",
+        "屈髋下压把手，再用腿和核心站起，动作连贯。",
+        "保持稳定节奏，避免只用手臂拉。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5661,7 +6089,11 @@
         "ex_hiking_2",
         "ex_hiking_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "保持躯干直立，步幅自然，上坡时缩短步幅。",
+        "用能持续对话的强度前进，注意脚下路况。",
+        "结束后拉伸小腿、髋部和臀部，记录距离和时长。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5692,7 +6124,11 @@
         "ex_treadmill_incline_walk_2",
         "ex_treadmill_incline_walk_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "先低速起步，再逐渐把坡度调到计划值。",
+        "保持躯干直立，手臂自然摆动，不要长时间抓扶手。",
+        "结束时先降坡度再降速度，慢走几分钟放松。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5723,7 +6159,11 @@
         "ex_battle_ropes_2",
         "ex_battle_ropes_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚与肩同宽，屈膝屈髋，双手各握绳端。",
+        "保持核心收紧，用手臂交替上下甩动绳索，形成连续波浪。",
+        "维持稳定节奏，按时间结束，避免弯腰驼背。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5797,7 +6237,11 @@
         "ex_knee_push_up_2",
         "ex_knee_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双膝着地，双手比肩略宽，身体从头到膝成一条直线。",
+        "屈肘下放到胸部接近地面，肘部约 45 度。",
+        "推起回到起始位，核心和臀部保持收紧，不要塌腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5832,7 +6276,11 @@
         "ex_wide_push_up_2",
         "ex_wide_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手比肩宽撑地，身体从头到脚成一条直线。",
+        "屈肘下放，肘部向外约 45 度，胸部接近地面。",
+        "推起回到起始位，核心收紧，避免腰部下沉。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5867,7 +6315,11 @@
         "ex_diamond_push_up_2",
         "ex_diamond_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手在胸部下方靠近，拇指和食指形成菱形。",
+        "屈肘下放，肘部贴近身体，胸部接近双手。",
+        "推起回到起始位，保持身体一条直线。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5942,7 +6394,11 @@
         "ex_pike_push_up_2",
         "ex_pike_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "从俯卧撑姿势把臀部向上推高，身体成倒 V 形。",
+        "屈肘让头部向双手之间的地面靠近。",
+        "推起回到倒 V 形，保持肩部稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -5977,7 +6433,11 @@
         "ex_feet_elevated_pike_push_up_2",
         "ex_feet_elevated_pike_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚放在低凳或台阶上，臀部向上推高，身体成倒 V 形。",
+        "屈肘让头部靠近地面，肩部保持在双手上方。",
+        "推起回到起始位，核心收紧，避免塌腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6012,7 +6472,11 @@
         "ex_archer_push_up_2",
         "ex_archer_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手宽距撑地，重心移向一侧，另一侧手臂保持伸直。",
+        "弯曲支撑侧肘部下放，胸部接近该侧手。",
+        "推回中间，换侧重复，身体保持稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6047,7 +6511,11 @@
         "ex_typewriter_push_up_2",
         "ex_typewriter_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯卧撑起始位，身体保持一条直线。",
+        "屈肘下放到低位，然后身体左右平移，把重心移向一只手。",
+        "推起回到中间，换侧重复，保持胸部低位。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6082,7 +6550,11 @@
         "ex_explosive_push_up_2",
         "ex_explosive_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯卧撑起始位，屈肘下放到胸部接近地面。",
+        "快速推起，让双手短暂离地。",
+        "落地时屈肘缓冲，重新稳定后再做下一次。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6117,7 +6589,11 @@
         "ex_hindu_push_up_2",
         "ex_hindu_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "从下犬式开始，臀部向上推高，双手撑地。",
+        "屈肘让胸部向双手之间下沉，再向前滑到眼镜蛇式。",
+        "把臀部推回下犬式，动作连贯，控制节奏。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6152,7 +6628,11 @@
         "ex_scapular_push_up_2",
         "ex_scapular_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "直臂俯卧撑姿势，双手在肩下，身体保持一条直线。",
+        "保持肘部伸直，只让肩胛骨向后收、胸口下沉。",
+        "再主动把肩胛骨推开，动作幅度小而可控。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6187,7 +6667,11 @@
         "ex_push_up_shoulder_tap_2",
         "ex_push_up_shoulder_tap_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "标准俯卧撑起始位，双脚略分开，核心收紧。",
+        "推起后一只手轻触对侧肩膀，保持髋部稳定。",
+        "把手放回，换另一侧，避免身体左右晃动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6218,7 +6702,11 @@
         "ex_wall_push_up_2",
         "ex_wall_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面对墙站立，双手扶墙略宽于肩，身体倾斜成一条直线。",
+        "屈肘让身体靠近墙，肘部约 45 度。",
+        "推回起始位，保持核心收紧，脚跟着地。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6253,7 +6741,11 @@
         "ex_wall_walk_2",
         "ex_wall_walk_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面对墙做俯卧撑支撑，双脚踩墙。",
+        "双手交替向墙上方走，双脚随之上移，身体逐渐接近垂直。",
+        "控制双手向下走回起始位，核心持续收紧。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6288,7 +6780,11 @@
         "ex_wall_handstand_push_up_2",
         "ex_wall_handstand_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面向或背向墙做倒立，双手撑地，身体稳定。",
+        "屈肘让头部向地面靠近，肘部朝前。",
+        "推起回到倒立位，核心收紧，建议有保护者。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6323,7 +6819,11 @@
         "ex_handstand_push_up_2",
         "ex_handstand_push_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "在自由倒立或靠墙倒立中稳定身体，双手撑地。",
+        "屈肘让头部向地面下放，保持身体一条直线。",
+        "推起回到倒立位，先掌握靠墙版本再尝试自由倒立。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6354,7 +6854,11 @@
         "ex_chair_dip_2",
         "ex_chair_dip_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手撑在椅子边缘，手指朝前，双脚向前伸出。",
+        "屈肘下放身体，肘部向后，肩部下沉。",
+        "推起回到手臂伸直，避免耸肩和身体远离椅子。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6389,7 +6893,11 @@
         "ex_doorway_row_2",
         "ex_doorway_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "确认门框牢固，双手抓住门框两侧，双脚踩地，身体向后倾斜。",
+        "屈肘把身体拉向门框，肩胛骨向后收。",
+        "控制回放到手臂伸直，身体保持一条直线。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6424,7 +6932,11 @@
         "ex_towel_row_2",
         "ex_towel_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把毛巾绕过牢固且不会滑动的固定物，双手各握一端。",
+        "身体后倾，屈肘把身体拉向固定物，肩胛骨收紧。",
+        "控制回放到手臂伸直，保持躯干稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6455,7 +6967,11 @@
         "ex_prone_y_raise_2",
         "ex_prone_y_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯卧在垫上，双臂向前伸成 Y 形，拇指朝上。",
+        "用上背发力把双臂抬离地面，肩胛骨向下收。",
+        "控制下放，避免耸肩或抬头过度。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6486,7 +7002,11 @@
         "ex_prone_t_raise_2",
         "ex_prone_t_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯卧在垫上，双臂向两侧伸成 T 形，拇指朝上。",
+        "用上背发力把双臂抬离地面，颈部保持中立。",
+        "控制下放，动作幅度以小而稳为准。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6561,7 +7081,11 @@
         "ex_superman_hold_2",
         "ex_superman_hold_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯卧，双臂向前伸直，双腿并拢。",
+        "同时抬起双臂和双腿，感受下背和臀部收紧。",
+        "保持自然呼吸，按时间结束，不要过度仰头。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6596,7 +7120,11 @@
         "ex_reverse_snow_angel_2",
         "ex_reverse_snow_angel_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "俯卧，双臂放在身体两侧，掌心向下。",
+        "把双臂沿地面向头顶方向滑动，同时抬离地面。",
+        "再沿原路滑回身体两侧，保持肩胛骨收紧。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6631,7 +7159,11 @@
         "ex_dead_hang_2",
         "ex_dead_hang_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手正握单杠，身体自然悬垂，双脚离地。",
+        "肩部保持放松但不完全松垮，核心轻微收紧。",
+        "保持自然呼吸，按时间结束，握力不足时及时下杠。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6666,7 +7198,11 @@
         "ex_active_hang_2",
         "ex_active_hang_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手正握单杠悬垂，双脚离地。",
+        "肩胛骨主动下沉后收，让身体略微上提。",
+        "保持这个发力状态，按时间结束，不要耸肩。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6740,7 +7276,11 @@
         "ex_negative_pull_up_2",
         "ex_negative_pull_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "借助跳起或踩凳到引体向上顶部，双手正握。",
+        "保持核心收紧，用 3 到 5 秒缓慢下放。",
+        "回到手臂伸直后重新上到顶部，重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6775,7 +7315,11 @@
         "ex_commando_pull_up_2",
         "ex_commando_pull_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "宽握单杠，身体悬垂，核心收紧。",
+        "把身体拉向一侧，让下巴靠近该侧手。",
+        "控制下放，换另一侧重复，避免身体摆荡。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6810,7 +7354,11 @@
         "ex_l_sit_pull_up_2",
         "ex_l_sit_pull_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手正握单杠，双腿抬起尽量接近 L 形；核心力量不足时先屈膝。",
+        "肩胛骨下沉，把身体拉到下巴超过横杠，保持双腿抬起。",
+        "控制下放，避免摆荡，按次数完成。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6845,7 +7393,11 @@
         "ex_towel_pull_up_2",
         "ex_towel_pull_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "确认单杠和毛巾都牢固，把毛巾挂在单杠上，双手各握一端。",
+        "肩胛骨下沉，把身体拉到下巴接近横杠。",
+        "控制下放，握力不足时缩短悬垂时间。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6919,7 +7471,11 @@
         "ex_pistol_squat_2",
         "ex_pistol_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，另一条腿向前伸直，双手前平举保持平衡。",
+        "屈髋屈膝下蹲，支撑腿膝盖朝脚尖方向。",
+        "支撑腿发力站起，完成一侧后换腿，可先扶固定物。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6954,7 +7510,11 @@
         "ex_assisted_pistol_squat_2",
         "ex_assisted_pistol_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，一手扶住固定物，另一条腿向前伸直。",
+        "屈膝下蹲到可控深度，支撑腿膝盖朝脚尖方向。",
+        "站起回到起始位，逐渐减少扶手力量，换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -6989,7 +7549,11 @@
         "ex_shrimp_squat_2",
         "ex_shrimp_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，另一条腿向后弯曲，脚背贴近支撑腿小腿。",
+        "屈髋屈膝下蹲，支撑腿膝盖朝脚尖方向。",
+        "站起回到起始位，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7024,7 +7588,11 @@
         "ex_cossack_squat_2",
         "ex_cossack_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚宽站，脚尖略外展，双手可在胸前。",
+        "重心移向一侧，屈膝下蹲，另一条腿保持伸直。",
+        "推回中间，换侧重复，膝盖朝脚尖方向。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7055,7 +7623,11 @@
         "ex_sissy_squat_2",
         "ex_sissy_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "脚跟抬起，前脚掌着地，膝盖向前，身体保持直立。",
+        "缓慢屈膝下蹲，让膝盖向前移动，髋部保持伸展。",
+        "伸膝站起，膝盖不适时减小幅度或停止。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7090,7 +7662,11 @@
         "ex_forward_lunge_2",
         "ex_forward_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚并拢站立，向前迈出一步。",
+        "屈膝下蹲到前后膝约 90 度，前膝朝脚尖方向。",
+        "前脚蹬地回到站姿，换腿重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7125,7 +7701,11 @@
         "ex_lateral_lunge_2",
         "ex_lateral_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚并拢站立，向一侧跨出一大步。",
+        "屈膝下蹲，臀部向后，另一条腿保持伸直。",
+        "跨出腿发力推回站姿，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7160,7 +7740,11 @@
         "ex_curtsy_lunge_2",
         "ex_curtsy_lunge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双脚并拢站立，一条腿从身体后方交叉撤步。",
+        "屈膝下蹲，保持前膝朝脚尖方向。",
+        "前脚发力回到站姿，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7195,7 +7779,11 @@
         "ex_skater_squat_2",
         "ex_skater_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，另一条腿向后交叉，身体略前倾。",
+        "屈膝下蹲，再向侧前方跳或跨到另一条腿。",
+        "落地时屈膝缓冲，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7230,7 +7818,11 @@
         "ex_single_leg_box_squat_2",
         "ex_single_leg_box_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站在箱子前，另一条腿向前伸直。",
+        "屈髋屈膝向后坐向箱子，轻触后保持控制。",
+        "支撑腿发力站起，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7265,7 +7857,11 @@
         "ex_step_down_2",
         "ex_step_down_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站在箱子或台阶上，一条腿悬空。",
+        "支撑腿屈膝，把悬空腿缓慢下放到地面轻触。",
+        "支撑腿发力站回箱上，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7287,7 +7883,11 @@
         "ex_calf_raise_2",
         "ex_calf_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "前脚掌踩在台阶边缘，脚跟悬空。",
+        "脚跟尽量下沉感受小腿拉伸，再踮起脚尖。",
+        "顶端停顿，控制下放，避免弹震。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7314,7 +7914,11 @@
         "ex_single_leg_calf_raise_2",
         "ex_single_leg_calf_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单脚前脚掌踩在台阶边缘，另一条腿抬起。",
+        "脚跟下沉后用力踮起，保持膝盖伸直。",
+        "控制下放，完成一侧后换腿，可扶墙保持平衡。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7345,7 +7949,11 @@
         "ex_glute_bridge_march_2",
         "ex_glute_bridge_march_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧屈膝，双脚踩地，先把髋部抬成桥式。",
+        "保持髋部高度，交替把一侧膝盖抬向胸部。",
+        "控制放回，骨盆保持稳定，不要左右下沉。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7372,7 +7980,11 @@
         "ex_frog_pump_2",
         "ex_frog_pump_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双脚脚掌相对，膝盖向两侧打开。",
+        "收紧臀部把髋部抬起，脚跟向臀部靠近。",
+        "顶端夹臀，控制下放，保持脚掌相对。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7403,7 +8015,11 @@
         "ex_donkey_kick_2",
         "ex_donkey_kick_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，手在肩下、膝在髋下，核心收紧。",
+        "一条腿保持屈膝，用臀部发力向后上方踢。",
+        "控制收回，不要塌腰，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7430,7 +8046,11 @@
         "ex_fire_hydrant_2",
         "ex_fire_hydrant_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，手在肩下、膝在髋下，核心收紧。",
+        "一条腿保持屈膝，向侧方抬起。",
+        "控制收回，骨盆保持稳定，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7457,7 +8077,11 @@
         "ex_clamshell_2",
         "ex_clamshell_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧卧，双膝屈曲叠放，双脚并拢，髋部稳定。",
+        "保持双脚相触，把上侧膝盖向上打开。",
+        "控制下放，不要转动骨盆，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7488,7 +8112,11 @@
         "ex_hip_airplane_2",
         "ex_hip_airplane_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，双手可扶固定物，另一条腿向后伸。",
+        "保持骨盆水平，把身体前倾再向外旋转髋部。",
+        "控制回到中间，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7515,7 +8143,11 @@
         "ex_side_lying_hip_abduction_2",
         "ex_side_lying_hip_abduction_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧卧，下侧腿弯曲，上侧腿伸直，髋部叠放。",
+        "保持上侧腿伸直，向侧上方抬起。",
+        "控制下放，不要向前转动骨盆，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7542,7 +8174,11 @@
         "ex_side_lying_leg_raise_2",
         "ex_side_lying_leg_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧卧，双腿伸直叠放，身体成一条直线。",
+        "把上侧腿向侧上方抬起，脚尖朝前。",
+        "控制下放，不要用腰部代偿，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7573,7 +8209,11 @@
         "ex_lying_hamstring_walkout_2",
         "ex_lying_hamstring_walkout_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧屈膝，双脚踩地，把髋部抬成桥式。",
+        "保持髋部高度，双脚交替向前走，直到腿接近伸直。",
+        "再交替走回起始位，髋部不要下沉。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7604,7 +8244,11 @@
         "ex_towel_hamstring_curl_2",
         "ex_towel_hamstring_curl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，把毛巾套在一只脚的前脚掌上，双手握住毛巾两端。",
+        "保持髋部抬离地面，屈膝把脚跟拉向臀部。",
+        "控制伸膝回到起始位，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7635,7 +8279,11 @@
         "ex_stability_ball_hamstring_curl_2",
         "ex_stability_ball_hamstring_curl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双脚放在稳定球上，把髋部抬成桥式。",
+        "保持髋部高度，屈膝把球拉向臀部。",
+        "控制把球推回，髋部不要下沉。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7666,7 +8314,11 @@
         "ex_banded_glute_bridge_2",
         "ex_banded_glute_bridge_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧屈膝，把弹力带套在膝盖上方，双脚踩地。",
+        "膝盖向外撑住弹力带，收紧臀部把髋部抬起。",
+        "顶端夹臀，控制下放，保持膝盖不内扣。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7697,7 +8349,11 @@
         "ex_banded_hip_thrust_2",
         "ex_banded_hip_thrust_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "上背部靠在凳上，弹力带套在膝盖上方，双脚踩稳。",
+        "膝盖向外撑住弹力带，把髋部推到躯干与大腿接近平行。",
+        "控制下放，保持膝盖朝脚尖方向。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7724,7 +8380,11 @@
         "ex_banded_frog_pump_2",
         "ex_banded_frog_pump_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，弹力带套在膝盖上方，双脚脚掌相对。",
+        "膝盖向外撑住弹力带，收紧臀部把髋部抬起。",
+        "顶端夹臀，控制下放，保持脚掌相对。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7751,7 +8411,11 @@
         "ex_banded_clamshell_2",
         "ex_banded_clamshell_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧卧，弹力带套在膝盖上方，双膝屈曲、双脚并拢。",
+        "保持骨盆稳定，把上侧膝盖向上打开，对抗弹力带阻力。",
+        "控制下放，完成一侧后换侧。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7782,7 +8446,11 @@
         "ex_banded_lateral_walk_2",
         "ex_banded_lateral_walk_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "弹力带套在膝盖上方或脚踝处，屈膝半蹲，双脚与肩同宽。",
+        "保持膝盖向外撑住弹力带，向一侧横向迈步。",
+        "另一只脚跟进但不要并拢，连续走若干步后换方向。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7817,7 +8485,11 @@
         "ex_banded_monster_walk_2",
         "ex_banded_monster_walk_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "弹力带套在脚踝处，屈膝半蹲，双脚略宽于肩。",
+        "保持弹力带张力，斜向前方迈步，脚尖略外展。",
+        "另一只脚跟进，连续走若干步后换方向。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7852,7 +8524,11 @@
         "ex_banded_squat_2",
         "ex_banded_squat_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "弹力带套在膝盖上方，双脚与肩同宽，脚尖略外展。",
+        "膝盖向外撑住弹力带，屈膝下蹲到舒适深度。",
+        "脚掌发力站起，全程保持膝盖不内扣。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7883,7 +8559,11 @@
         "ex_banded_donkey_kick_2",
         "ex_banded_donkey_kick_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，弹力带套在脚掌或脚踝处并固定另一端。",
+        "一条腿保持屈膝，用臀部发力向后上方踢。",
+        "控制收回，不要塌腰，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7910,7 +8590,11 @@
         "ex_banded_fire_hydrant_2",
         "ex_banded_fire_hydrant_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，弹力带套在膝盖上方。",
+        "一条腿保持屈膝，向侧方抬起对抗弹力带。",
+        "控制收回，骨盆保持稳定，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7941,7 +8625,11 @@
         "ex_banded_kickback_2",
         "ex_banded_kickback_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面向固定点站立，弹力带套在脚踝处，双手扶住固定物。",
+        "保持膝盖微屈，把腿向后踢，臀部收紧。",
+        "控制回放，避免腰部摆动，换腿重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7968,7 +8656,11 @@
         "ex_banded_standing_hip_abduction_2",
         "ex_banded_standing_hip_abduction_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对固定点站立，弹力带套在脚踝处，手扶固定物。",
+        "保持躯干直立，把外侧腿向侧方抬起。",
+        "控制回放，换侧重复，膝盖保持朝前。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -7995,7 +8687,11 @@
         "ex_banded_seated_hip_abduction_2",
         "ex_banded_seated_hip_abduction_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿，弹力带套在膝盖上方，双脚踩地。",
+        "膝盖向外撑开弹力带，保持背部挺直。",
+        "控制回放到起始位，避免用身体晃动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8062,7 +8758,11 @@
         "ex_banded_face_pull_2",
         "ex_banded_face_pull_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把弹力带固定在面部高度，双手握住两端，手臂向前伸直。",
+        "向面部方向拉动，同时把双手向两侧分开，肘部抬高。",
+        "末端外旋肩部并稍停，再缓慢回放。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8093,7 +8793,11 @@
         "ex_banded_row_2",
         "ex_banded_row_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把弹力带固定在胸部高度，双手握住两端，身体后倾。",
+        "肩胛骨后收，把双手拉向躯干，肘部贴近身体。",
+        "控制回放到手臂伸直，保持躯干稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8124,7 +8828,11 @@
         "ex_banded_lat_pulldown_2",
         "ex_banded_lat_pulldown_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "把弹力带固定在高处，跪姿或站姿，双手握住两端。",
+        "肩胛骨下沉，把双手拉向胸口，肘部向下。",
+        "控制回放到手臂伸直，避免后仰借力。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8155,7 +8863,11 @@
         "ex_banded_pallof_press_2",
         "ex_banded_pallof_press_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对固定点站立，弹力带固定在胸部高度，双手握把置于胸前。",
+        "收紧核心，把双手向前推直，抵抗躯干旋转。",
+        "保持数秒后收回，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8186,7 +8898,11 @@
         "ex_banded_woodchop_2",
         "ex_banded_woodchop_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧对固定点站立，弹力带固定在高处，双手握住带端。",
+        "用核心带动，把双手沿斜线拉向对侧髋部，同时转动躯干。",
+        "控制回到起始位，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8217,7 +8933,11 @@
         "ex_banded_dead_bug_2",
         "ex_banded_dead_bug_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，弹力带套在双脚或双手上，四肢抬起。",
+        "保持下背贴地，缓慢伸直一侧手臂和对侧腿。",
+        "控制收回，换另一侧，动作全程缓慢。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8244,7 +8964,11 @@
         "ex_hollow_body_hold_2",
         "ex_hollow_body_hold_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双手举过头顶，双腿伸直并拢。",
+        "收紧腹部把肩胛骨和双腿抬离地面，下背贴地。",
+        "保持自然呼吸，按时间结束，腰部不适时屈膝。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8271,7 +8995,11 @@
         "ex_hollow_rock_2",
         "ex_hollow_rock_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，收紧腹部进入空心体支撑，肩胛骨和双腿离地。",
+        "保持身体弧形，用腹部控制做小幅前后滚动。",
+        "滚动时下背不要离地太多，按次数完成。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8298,7 +9026,11 @@
         "ex_v_up_2",
         "ex_v_up_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双臂举过头顶，双腿伸直。",
+        "同时抬起躯干和双腿，让双手接近脚尖。",
+        "控制下放，避免用手甩动，按次数完成。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8325,7 +9057,11 @@
         "ex_flutter_kick_2",
         "ex_flutter_kick_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双手放在身体两侧或臀下，双腿伸直抬起。",
+        "保持下背贴地，双腿交替做小幅上下打腿。",
+        "维持自然呼吸，按时间结束，腰部不适时抬高双腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8352,7 +9088,11 @@
         "ex_lying_leg_raise_2",
         "ex_lying_leg_raise_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双手放在身体两侧，双腿伸直并拢。",
+        "保持下背贴地，把双腿抬到接近垂直。",
+        "控制下放到腿接近地面但不触地，再重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8374,7 +9114,11 @@
         "ex_toe_touch_2",
         "ex_toe_touch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双腿伸直并拢，双臂向头顶方向伸展。",
+        "用腹部发力卷起躯干，双手伸向脚尖。",
+        "控制下放，避免用手拉头，按次数完成。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8396,7 +9140,11 @@
         "ex_heel_tap_2",
         "ex_heel_tap_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧屈膝，双脚踩地，双臂放在身体两侧。",
+        "保持下背贴地，把一侧手伸向同侧脚跟。",
+        "回到中间，换另一侧，动作幅度小而稳。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8427,7 +9175,11 @@
         "ex_plank_shoulder_tap_2",
         "ex_plank_shoulder_tap_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "标准平板支撑，手在肩下，双脚略分开。",
+        "保持髋部稳定，一只手轻触对侧肩膀。",
+        "放回后换手，避免身体左右晃动。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8458,7 +9210,11 @@
         "ex_plank_jack_2",
         "ex_plank_jack_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "平板支撑起始位，双脚并拢，核心收紧。",
+        "双脚向两侧跳开，再跳回并拢。",
+        "保持肩部在手腕上方，按时间结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8489,7 +9245,11 @@
         "ex_bear_plank_2",
         "ex_bear_plank_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，膝盖离地约几厘米，背部平直。",
+        "双手推地，核心收紧，保持骨盆稳定。",
+        "保持自然呼吸，按时间结束，不要塌腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8524,7 +9284,11 @@
         "ex_bear_crawl_2",
         "ex_bear_crawl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，膝盖离地，背部平直，核心收紧。",
+        "对侧手脚同时向前移动一小步。",
+        "保持低重心连续爬行，按时间或距离结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8559,7 +9323,11 @@
         "ex_crab_walk_2",
         "ex_crab_walk_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿，双手在身后撑地，屈膝抬臀。",
+        "手脚交替向前移动，保持臀部离地。",
+        "躯干保持稳定，按时间或距离结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8635,7 +9403,11 @@
         "ex_l_sit_hold_2",
         "ex_l_sit_hold_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "双手撑在双杠或地面上，肩胛骨下沉。",
+        "屈膝把大腿抬向胸部，保持背部挺直。",
+        "保持自然呼吸，按时间结束，力量不足时缩短时间。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8662,7 +9434,11 @@
         "ex_seated_knee_tuck_2",
         "ex_seated_knee_tuck_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐在凳子边缘，双手扶住凳子，身体略后倾。",
+        "屈膝把膝盖抬向胸部，腹部收紧。",
+        "控制双腿下放，按次数完成，不要用惯性。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8693,7 +9469,11 @@
         "ex_side_plank_hip_dip_2",
         "ex_side_plank_hip_dip_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧支撑，肘部在肩下，身体成一条直线。",
+        "保持支撑稳定，把髋部向下沉向地面。",
+        "再用侧腹发力把髋部抬起，按次数完成后换侧。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8724,7 +9504,11 @@
         "ex_copenhagen_plank_2",
         "ex_copenhagen_plank_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "侧卧，上侧腿放在长凳上，肘部撑在肩下。",
+        "收紧内收肌和核心，把髋部抬离地面，身体成一条直线。",
+        "保持自然呼吸，按时间结束，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8755,7 +9539,11 @@
         "ex_dragon_flag_2",
         "ex_dragon_flag_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "仰卧，双手抓住头后固定物，肩胛骨稳定。",
+        "收紧核心把身体抬离地面，只让上背接触支撑面。",
+        "控制身体缓慢下放，避免腰部塌陷，按次数完成。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8794,7 +9582,11 @@
         "ex_burpee_2",
         "ex_burpee_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站立后下蹲，双手撑地。",
+        "双脚向后跳到俯卧撑位，可做一个俯卧撑。",
+        "双脚跳回手边并站起，按次数完成。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8829,7 +9621,11 @@
         "ex_half_burpee_2",
         "ex_half_burpee_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站立后下蹲，双手撑地。",
+        "双脚先后撤到高位平板，再收回。",
+        "站起回到起始位，按次数完成，不包含俯卧撑。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8864,7 +9660,11 @@
         "ex_squat_thrust_2",
         "ex_squat_thrust_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站立后下蹲，双手撑地。",
+        "双脚向后跳到平板位，再跳回手边。",
+        "站起回到起始位，保持核心收紧。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8895,7 +9695,11 @@
         "ex_high_knees_2",
         "ex_high_knees_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站立，核心收紧，手臂自然弯曲。",
+        "原地交替把膝盖抬向髋部高度，前脚掌轻落地。",
+        "保持快速节奏，按时间结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8930,7 +9734,11 @@
         "ex_jumping_jack_2",
         "ex_jumping_jack_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站立，双脚并拢，双臂放在身体两侧。",
+        "跳起把双脚分开，同时双臂向头顶举起。",
+        "跳回起始位，保持稳定节奏。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -8965,7 +9773,11 @@
         "ex_skater_hop_2",
         "ex_skater_hop_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，另一条腿向后交叉。",
+        "向侧前方跳到另一条腿上，落地屈膝缓冲。",
+        "交替跳向两侧，保持躯干稳定。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9000,7 +9812,11 @@
         "ex_lateral_shuffle_2",
         "ex_lateral_shuffle_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "屈膝半蹲，双脚略宽于肩，重心放低。",
+        "向一侧连续小步移动，保持膝盖朝前。",
+        "到达目标后换方向，按时间结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9031,7 +9847,11 @@
         "ex_fast_feet_2",
         "ex_fast_feet_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "屈膝半蹲，前脚掌着地，双手可在胸前。",
+        "原地快速交替踏步，脚步轻而快。",
+        "保持核心稳定，按时间结束。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9066,7 +9886,11 @@
         "ex_sprawl_2",
         "ex_sprawl_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站立后迅速下蹲，双手撑地。",
+        "双腿向后伸直，髋部下沉接近地面。",
+        "迅速收腿站起，按次数完成。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9101,7 +9925,11 @@
         "ex_seal_jack_2",
         "ex_seal_jack_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站立，双脚并拢，双臂向前平举。",
+        "跳起把双脚分开，同时双臂向两侧打开。",
+        "跳回起始位，保持稳定节奏。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9132,7 +9960,11 @@
         "ex_cat_cow_stretch_2",
         "ex_cat_cow_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "四点跪姿，手在肩下、膝在髋下。",
+        "吸气时抬头、胸口下沉，尾骨向上。",
+        "呼气时低头、背部拱起，缓慢交替。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9245,7 +10077,11 @@
         "ex_leg_swings_stretch_2",
         "ex_leg_swings_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单手扶住固定物，单腿站立。",
+        "另一条腿向前后自然摆动，幅度逐渐增大。",
+        "保持躯干稳定，完成一侧后换腿。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9276,7 +10112,11 @@
         "ex_torso_twist_stretch_2",
         "ex_torso_twist_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站姿，双脚与肩同宽，双手可放在胸前或自然下垂。",
+        "保持髋部朝前，缓慢把躯干转向一侧。",
+        "回到中间后换侧，不要猛甩。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9307,7 +10147,11 @@
         "ex_doorway_chest_stretch_2",
         "ex_doorway_chest_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站在门框中间，前臂扶住门框，肘部略高于肩。",
+        "身体缓慢向前倾，直到胸部有拉伸感。",
+        "保持 20 到 30 秒并自然呼吸，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9377,7 +10221,11 @@
         "ex_kneeling_hip_flexor_stretch_2",
         "ex_kneeling_hip_flexor_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单膝跪地，另一条腿在前屈膝，骨盆保持中立。",
+        "收紧臀部，身体缓慢向前移动，感受后侧髋部拉伸。",
+        "保持 20 到 30 秒，换侧重复，不要塌腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9443,7 +10291,11 @@
         "ex_standing_quad_stretch_2",
         "ex_standing_quad_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "单腿站立，一手扶固定物，另一手抓住同侧脚踝。",
+        "把脚跟拉向臀部，膝盖朝下，骨盆保持中立。",
+        "保持 20 到 30 秒，换侧重复，不要弓腰。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9478,7 +10330,11 @@
         "ex_seated_forward_fold_stretch_2",
         "ex_seated_forward_fold_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿，双腿伸直，背部挺直。",
+        "从髋部向前折叠，双手伸向小腿或脚尖。",
+        "保持 20 到 30 秒，自然呼吸，不要弹震。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9509,7 +10365,11 @@
         "ex_cross_body_shoulder_stretch_2",
         "ex_cross_body_shoulder_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "站姿或坐姿，一只手臂横过胸前。",
+        "另一只手扶住上臂，把它拉向身体，肩部放松。",
+        "保持 20 到 30 秒，换侧重复。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9536,7 +10396,11 @@
         "ex_wall_calf_stretch_2",
         "ex_wall_calf_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "面对墙站立，双手扶墙，一只脚向后踩实。",
+        "后腿伸直、脚跟踩地，身体向前倾，感受小腿拉伸。",
+        "保持 20 到 30 秒，换侧重复，脚跟不要离地。"
+      ],
       "instructionSourceId": null
     },
     {
@@ -9567,7 +10431,11 @@
         "ex_butterfly_stretch_2",
         "ex_butterfly_stretch_3"
       ],
-      "instructionsZh": [],
+      "instructionsZh": [
+        "坐姿，双脚脚掌相对，膝盖向两侧打开。",
+        "双手抓住脚掌，背部挺直，从髋部缓慢前倾。",
+        "保持 20 到 30 秒，自然呼吸，不要压膝。"
+      ],
       "instructionSourceId": null
     }
   ]

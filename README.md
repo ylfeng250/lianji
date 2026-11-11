@@ -18,7 +18,7 @@
 试过一些记录应用后，练迹把需要的部分留下，把不需要的部分删掉，并且把代码公开出来，方便自己改、也方便别人参考。
 
 - **完全离线**：安装包不申请 `INTERNET` / `ACCESS_NETWORK_STATE` 权限，没有账号、广告、分析 SDK。
-- **中文动作库**：302 个动作，中文名称、肌群、器械、训练类型；85 个动作带中文分步说明。
+- **中文动作库**：302 个动作都有中文说明，其中 85 个的分步文字译自 free-exercise-db，另外 217 个是项目原创要点。
 - **动作图来自开源项目**：[Workout Guide](https://github.com/bryllim/workout-guide) 的三帧 SVG，转成矢量图并按主题色着色。
 - **适合单手**：长按多选、左右滑动、删除撤销、步进器记组、固定在顶部的休息计时。
 
@@ -28,7 +28,7 @@
 
 ### 动作库
 
-- 302 个动作，按拼音、肌群、器械或收藏排序；筛器械、训练类型，或只看有步骤/收藏。
+- 302 个动作，按拼音、肌群、器械或收藏排序；筛器械、训练类型，或只看详细步骤/收藏。
 - 列表右滑收藏、左滑加入当前训练；长按多选后可以批量收藏、加入计划、加入训练。
 - 详情页左右翻页切换动作，三帧图自动播放/暂停、点圆点手动切帧。
 - 详情页显示最近三次训练；底部固定「开始训练 / 加入计划」。
@@ -173,14 +173,14 @@ CI 在每次 push/PR 时跑单元测试、debug 构建和 release 构建；relea
 |---|---|---|
 | 应用代码、构建脚本、测试 | 本项目 | [MIT](LICENSE) |
 | 动作图（`res/drawable/ex_*.xml`） | [Workout Guide](https://github.com/bryllim/workout-guide) by Bryl Lim；部分第一帧改编自 [Everkinetic](https://github.com/everkinetic/data) | [CC BY-SA 4.0](LICENSE-ASSETS) |
-| 分步文字 | [free-exercise-db](https://github.com/yuhonas/free-exercise-db)，Translated into Chinese | Unlicense（公有领域） |
+| 分步文字 | 85 个动作译自 [free-exercise-db](https://github.com/yuhonas/free-exercise-db)（Translated into Chinese）；217 个为项目原创要点 | Unlicense + MIT |
 | 截图（含动作图） | 本项目 | CC BY-SA 4.0 |
 | 交互设计参考 | [GymMane](https://github.com/InlitX/GymMane)、[LibreFit](https://github.com/LibreFitOrg/LibreFit) | 只参考公开界面与产品思路，未使用其 GPL 代码 |
 
 - 本项目的改动：SVG → Android VectorDrawable、拆分过长路径、按主题色着色、三帧选取、中文元数据。
 - 修改后的动作图继续以 **CC BY-SA 4.0** 提供；再分发或修改时请保留署名并注明改动。
 - 完整署名、上游链接和改动说明见 [NOTICE.md](NOTICE.md)；应用内「关于、隐私与许可」也展示同一份文本。
-- 不使用 free-exercise-db 的图片；没有可靠文字匹配的动作只显示图示，不编造步骤。
+- 不使用 free-exercise-db 的图片；没有可靠文字匹配的动作使用项目原创要点，不冒充上游来源。
 
 如果你发现署名或来源有误，请开 issue，会尽快修正。
 
@@ -204,7 +204,7 @@ CI 在每次 push/PR 时跑单元测试、debug 构建和 release 构建；relea
 It ships 302 exercises with three-frame vector artwork from [Workout Guide](https://github.com/bryllim/workout-guide),
 plus routines, set/rest tracking, PRs, history and a local backup format.
 
-- No account, no ads, no analytics, and **no `INTERNET` permission**.
+- Every exercise ships with a Chinese description; no account, no ads, no analytics, and **no `INTERNET` permission**.
 - Kotlin + Jetpack Compose + Material 3 + Room; single Activity, MVVM.
 - `minSdk 23`, `targetSdk 36`, APK ~21 MB.
 - Build: `./gradlew :catalog-tools:test :app:testDebugUnitTest :app:assembleRelease` (JDK 21, Android SDK 36).

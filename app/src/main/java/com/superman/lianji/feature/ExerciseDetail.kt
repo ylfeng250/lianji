@@ -280,7 +280,7 @@ private fun ExerciseDetailPage(
         } else if (item.steps.isEmpty()) {
             item {
                 Text(
-                    "这个动作目前用三帧图示作为参考，没有匹配到可靠的分步文字。左右滑动动作图片可以逐帧查看。",
+                    "这个动作暂时没有文字说明，请结合三帧图示和器械设置练习。",
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     style = MaterialTheme.typography.bodyMedium,
                 )
@@ -297,6 +297,17 @@ private fun ExerciseDetailPage(
                     Text(item.steps[index], style = MaterialTheme.typography.bodyLarge)
                 }
             }
+        }
+        item {
+            Text(
+                if (item != null && item.sourceId != null) {
+                    "分步文字来自 free-exercise-db（Unlicense），已译为中文。"
+                } else {
+                    "说明为项目原创要点（MIT），结合三帧图示参考。"
+                },
+                style = MaterialTheme.typography.bodyMedium,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+            )
         }
         item {
             Text(

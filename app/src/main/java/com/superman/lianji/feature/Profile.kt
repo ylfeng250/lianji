@@ -236,7 +236,7 @@ fun AboutScreen(onBack: () -> Unit) {
         }
         Text("练迹是开源、离线的训练记录应用。没有账号，不申请网络权限，训练数据只保存在这台手机上。源代码和许可：github.com/ylfeng250/lianji")
         Text("动作图示来自 Bryl Lim 的 workout-guide，部分第一帧改编自 Everkinetic，采用 CC BY-SA 4.0。应用把 SVG 转成 Android Vector Drawable 并用主题色着色；修改后的图示继续以同一许可提供。")
-        Text("应用代码采用 MIT 许可；动作图采用 CC BY-SA 4.0；分步文字来自 free-exercise-db（Unlicense），这里只使用文字并译成中文，不使用它的照片。")
+        Text("302 个动作都有中文说明：其中 85 个的分步文字来自 free-exercise-db（Unlicense），已译为中文；其余 217 个是项目原创要点（MIT）。不使用 free-exercise-db 的照片。")
         Text("交互设计参考了 GymMane 与 LibreFit 的公开界面与产品思路，没有使用它们的源代码。")
         Text("动作参考不能替代教练、医生或康复人员的指导。疼痛、头晕或不适时请停止训练。")
         Text(text, style = MaterialTheme.typography.bodyMedium)

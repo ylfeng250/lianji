@@ -23,11 +23,12 @@
 
 应用内「关于、隐私与许可」页面展示的也是这些文本。
 
-## 分步文字（Unlicense）
+## 分步文字与原创说明
 
 - 来源：[free-exercise-db](https://github.com/yuhonas/free-exercise-db)，原文为 Unlicense（公有领域）。
-- 只使用文字，不使用该项目的图片；85 个动作的步骤被译成简体中文。
-- 没有可靠匹配的动作不编造步骤，只显示三帧图示和标签。
+- 只使用文字，不使用该项目的图片；85 个动作的步骤被译成简体中文，按 Unlicense 使用。
+- 另外 217 个动作在 free-exercise-db 中没有可靠匹配，使用本项目原创的中文说明（MIT），
+  不冒充上游内容。
 - 译文的署名与来源记录在 `catalog-work/matched.json` 和 `app/src/main/assets/catalog/exercises_zh.json` 的
   `instructionSourceId` 字段里。
 
