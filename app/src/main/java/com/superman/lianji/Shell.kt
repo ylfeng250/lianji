@@ -53,10 +53,12 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
@@ -81,6 +83,7 @@ import com.superman.lianji.core.data.UserSettings
 import com.superman.lianji.core.database.RoutineEntity
 import com.superman.lianji.core.database.SessionEntity
 import com.superman.lianji.core.domain.RecordHit
+import com.superman.lianji.core.domain.UpdateManifest
 import com.superman.lianji.core.domain.WeightUnit
 import com.superman.lianji.core.domain.formatNumber
 import com.superman.lianji.core.domain.recentRecords
@@ -92,6 +95,7 @@ import com.superman.lianji.core.ui.LianjiTheme
 import com.superman.lianji.core.ui.LocalSnackbarHostState
 import com.superman.lianji.core.ui.SectionTitle
 import com.superman.lianji.core.ui.StatTile
+import com.superman.lianji.core.ui.UpdateAvailableDialog
 import com.superman.lianji.core.ui.chineseDate
 import com.superman.lianji.feature.AboutScreen
 import com.superman.lianji.feature.DataScreen
@@ -208,8 +212,14 @@ private fun LianjiRoot(container: AppContainer) {
     val showBar = route in setOf("today", "exercises", "data", "profile")
     val snackbarHostState = remember { SnackbarHostState() }
     var showStart by rememberSaveable { mutableStateOf(false) }
+    var updatePrompt by remember { mutableStateOf<UpdateManifest?>(null) }
+    val scope = rememberCoroutineScope()
     val todayModel: TodayViewModel = viewModel(factory = simpleFactory { TodayViewModel(container) })
     val today by todayModel.state.collectAsState()
+
+    LaunchedEffect(Unit) {
+        updatePrompt = runCatching { container.updates.checkForStartupPrompt() }.getOrNull()
+    }
 
     val start: () -> Unit = { showStart = true }
     Scaffold(
@@ -285,6 +295,16 @@ private fun LianjiRoot(container: AppContainer) {
             onQuick = { showStart = false; todayModel.quick { nav.navigate("workout/$it") } },
             onRoutines = { showStart = false; nav.navigate("routines") },
             onDismiss = { showStart = false },
+        )
+    }
+    updatePrompt?.let { manifest ->
+        UpdateAvailableDialog(
+            manifest = manifest,
+            onDismiss = { updatePrompt = null },
+            onLater = {
+                scope.launch { container.updates.dismiss(manifest.versionCode) }
+                updatePrompt = null
+            },
         )
     }
 }

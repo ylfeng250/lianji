@@ -4,6 +4,38 @@
 
 ## [Unreleased]
 
+## [1.3.2] - 2026-11-14
+
+### 修复
+
+- 自定义运动面板在 BottomSheet 无界高度下无法滚动：内容区改为明确限高可滚，底栏仍固定；兼容键盘顶起。
+
+## [1.3.1] - 2026-11-14
+
+### 修复
+
+- 自定义运动面板底部「创建并添加」在小屏上被挡：操作按钮改为固定底栏。
+- 切换到自重/负重次数时，默认肌群从「心肺」改为「核心」；常用预设增加「平板支撑」。
+
+## [1.3.0] - 2026-11-14
+
+### 新增
+
+- 检查更新：启动时大约每天自动拉取一次版本信息；「我的」里也可手动检查。
+- 有新版本时弹窗提示，点「去下载」用浏览器打开安装包。
+
+### 变更
+
+- 申请 `INTERNET` 权限，仅用于读取 `version.json`；仍不申请 `ACCESS_NETWORK_STATE`，无账号/广告/分析，训练数据仍只存本机。
+
+## [1.2.0] - 2026-11-13
+
+### 新增
+
+- 动作库支持录入自定义运动（爬楼、跑步、徒步、爬山等预设，也可自填名称）。
+- 自定义运动可选时长、距离与时长、自重次数或负重次数，训练页直接按类型记录。
+- 自定义运动写入本机动作库，支持删除；备份/恢复会一并带上。
+
 ## [1.1.0] - 2026-11-11
 
 交互重构版本。
@@ -54,7 +86,11 @@
 - 训练计划、历史、周统计、肌群统计、动作趋势、个人纪录。
 - `.lianji` 备份导出/恢复；无账号、无网络权限。
 
-[Unreleased]: https://github.com/ylfeng250/lianji/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/ylfeng250/lianji/compare/v1.3.2...HEAD
+[1.3.2]: https://github.com/ylfeng250/lianji/compare/v1.3.1...v1.3.2
+[1.3.1]: https://github.com/ylfeng250/lianji/compare/v1.3.0...v1.3.1
+[1.3.0]: https://github.com/ylfeng250/lianji/compare/v1.2.0...v1.3.0
+[1.2.0]: https://github.com/ylfeng250/lianji/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/ylfeng250/lianji/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/ylfeng250/lianji/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/ylfeng250/lianji/releases/tag/v1.0.0

@@ -44,7 +44,7 @@ catalog-tools/      动作目录生成脚本与 Kotlin 校验器
 - Composable 尽量无状态；状态放 ViewModel，纯计算放 `core/domain` 并补单元测试。
 - 新页面沿用现有的交互语言：长按多选、左滑删除、删除必须可撤销、危险操作才用确认框。
 - 文案用简体中文，避免英文缩写（单位除外）。
-- 不引入需要网络权限的依赖；合并清单里出现 `INTERNET` 会让构建失败。
+- 不要为广告/分析引入网络依赖；`INTERNET` 仅用于检查更新。合并清单里出现 `ACCESS_NETWORK_STATE` 会让构建失败。
 - 数据库变更：Room 版本号 + 迁移 + 更新 `app/schemas/`；不要依赖破坏性迁移。
 - **不要在父子表上用 `@Insert(onConflict = REPLACE)` 做更新**。SQLite 的 REPLACE 是先删再插入，
   会触发 `ON DELETE CASCADE` 把子记录删掉；更新请用 `@Update`。`RoutineRepositoryTest` 是这条的回归测试。

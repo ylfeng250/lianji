@@ -92,6 +92,25 @@ data class SetBackup(
 )
 
 @Serializable
+data class CustomExerciseBackup(
+    val id: String,
+    val slug: String,
+    val nameEn: String = "",
+    val nameZh: String,
+    val aliasesZh: String = "",
+    val equipmentZh: String,
+    val primaryMuscleZh: String,
+    val secondaryZh: String = "",
+    val exerciseType: String,
+    val exerciseTypeZh: String,
+    val isStretch: Boolean = false,
+    val instructionsZh: String = "[]",
+    val instructionSourceId: String? = null,
+    val frameName: String = "",
+    val allFrames: String = "",
+)
+
+@Serializable
 data class UserDataBackup(
     val favorites: List<FavoriteBackup> = emptyList(),
     val routines: List<RoutineBackup> = emptyList(),
@@ -100,6 +119,7 @@ data class UserDataBackup(
     val sessions: List<SessionBackup> = emptyList(),
     val workoutExercises: List<WorkoutExerciseBackup> = emptyList(),
     val sets: List<SetBackup> = emptyList(),
+    val customExercises: List<CustomExerciseBackup> = emptyList(),
 )
 
 @Serializable
@@ -190,6 +210,17 @@ object BackupArchive {
         requireIds(data.sessions.map { it.id }, "训练")
         requireIds(data.workoutExercises.map { it.id }, "训练动作")
         requireIds(data.sets.map { it.id }, "训练组")
+        requireIds(data.customExercises.map { it.id }, "自定义动作")
+        data.customExercises.forEach {
+            requireText(it.nameZh, 1, 40, "自定义动作名称")
+            requireText(it.slug, 1, 80, "自定义动作编号")
+            requireText(it.equipmentZh, 1, 20, "器械")
+            requireText(it.primaryMuscleZh, 1, 20, "肌群")
+            if (it.exerciseType !in setOf("weight_reps", "bodyweight_reps", "assisted_bodyweight", "duration", "distance_duration")) {
+                throw BackupException("自定义动作追踪类型无效")
+            }
+            requireText(it.exerciseTypeZh, 1, 20, "训练类型")
+        }
         val routines = data.routines.associateBy { it.id }
         val routineExercises = data.routineExercises.associateBy { it.id }
         data.routines.forEach {

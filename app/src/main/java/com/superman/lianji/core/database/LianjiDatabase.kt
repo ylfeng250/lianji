@@ -14,7 +14,9 @@ import androidx.room3.Room
 import androidx.room3.RoomDatabase
 import androidx.room3.Transaction
 import androidx.room3.Update
+import androidx.room3.migration.Migration
 import androidx.sqlite.driver.bundled.BundledSQLiteDriver
+import androidx.sqlite.execSQL
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 
@@ -35,6 +37,7 @@ data class ExerciseEntity(
     val instructionSourceId: String?,
     val frameName: String,
     val allFrames: String,
+    val isCustom: Boolean = false,
 )
 
 @Entity(
@@ -177,11 +180,20 @@ interface CatalogDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun upsertExercises(items: List<ExerciseEntity>)
 
-    @Query("DELETE FROM exercise_frames")
-    suspend fun clearFrames()
+    @Query("DELETE FROM exercise_frames WHERE exerciseId IN (SELECT id FROM exercises WHERE isCustom = 0)")
+    suspend fun clearCatalogFrames()
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertFrames(items: List<ExerciseFrameEntity>)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    suspend fun insertExercise(item: ExerciseEntity)
+
+    @Query("DELETE FROM exercises WHERE id = :id AND isCustom = 1")
+    suspend fun deleteCustomExercise(id: String)
+
+    @Query("SELECT * FROM exercises WHERE isCustom = 1 ORDER BY nameZh")
+    suspend fun customExercises(): List<ExerciseEntity>
 
     @Query("SELECT * FROM exercises ORDER BY nameZh")
     fun observeExercises(): Flow<List<ExerciseEntity>>
@@ -394,6 +406,10 @@ abstract class TrainingDao {
     abstract suspend fun insertSessions(items: List<SessionEntity>)
 }
 
+val MIGRATION_1_2 = Migration(1, 2) { connection ->
+    connection.execSQL("ALTER TABLE exercises ADD COLUMN isCustom INTEGER NOT NULL DEFAULT 0")
+}
+
 @Database(
     entities = [
         ExerciseEntity::class,
@@ -407,7 +423,7 @@ abstract class TrainingDao {
         WorkoutExerciseEntity::class,
         SetEntity::class,
     ],
-    version = 1,
+    version = 2,
     exportSchema = true,
 )
 abstract class LianjiDatabase : RoomDatabase() {
@@ -419,6 +435,7 @@ abstract class LianjiDatabase : RoomDatabase() {
             Room.databaseBuilder(context, LianjiDatabase::class.java, "lianji.db")
                 .setDriver(BundledSQLiteDriver())
                 .setQueryCoroutineContext(Dispatchers.IO)
+                .addMigrations(MIGRATION_1_2)
                 .build()
     }
 }

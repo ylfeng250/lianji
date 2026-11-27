@@ -21,6 +21,7 @@ import androidx.compose.foundation.pager.rememberPagerState
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.FitnessCenter
 import androidx.compose.material.icons.filled.PlaylistAdd
 import androidx.compose.material.icons.filled.Star
@@ -126,6 +127,17 @@ private fun ExerciseDetailPager(
                 },
                 navigationIcon = { IconButton(onBack) { Icon(Icons.Filled.ArrowBack, "返回") } },
                 actions = {
+                    if (current?.isCustom == true) {
+                        IconButton({
+                            scope.launch {
+                                container.exercises.deleteCustom(currentId)
+                                toast("已删除自定义运动")
+                                onBack()
+                            }
+                        }) {
+                            Icon(Icons.Filled.Delete, "删除自定义运动", tint = MaterialTheme.colorScheme.error)
+                        }
+                    }
                     IconButton({
                         scope.launch {
                             container.exercises.toggleFavorite(currentId)
@@ -239,6 +251,7 @@ private fun ExerciseDetailPage(
         }
         item {
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                if (summary.isCustom || item?.isCustom == true) Pill("自定义")
                 Pill(summary.muscleZh)
                 Pill(summary.equipmentZh)
                 Pill(summary.typeZh)
@@ -274,47 +287,58 @@ private fun ExerciseDetailPage(
                 if (item != null && item.secondaryZh.isNotBlank()) Pill("协同：" + item.secondaryZh)
             }
         }
-        item { SectionTitle("动作步骤") }
-        if (item == null) {
-            item { Text("正在读取步骤", color = MaterialTheme.colorScheme.onSurfaceVariant) }
-        } else if (item.steps.isEmpty()) {
+        if (summary.isCustom || item?.isCustom == true) {
+            item { SectionTitle("自定义运动") }
             item {
                 Text(
-                    "这个动作暂时没有文字说明，请结合三帧图示和器械设置练习。",
+                    "这是你自己添加的运动。训练里按所选类型记录时长、距离或次数；删除后历史记录里的名称仍会保留。",
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
                     style = MaterialTheme.typography.bodyMedium,
                 )
             }
         } else {
-            items(item.steps.size) { index ->
-                Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+            item { SectionTitle("动作步骤") }
+            if (item == null) {
+                item { Text("正在读取步骤", color = MaterialTheme.colorScheme.onSurfaceVariant) }
+            } else if (item.steps.isEmpty()) {
+                item {
                     Text(
-                        "${index + 1}",
-                        style = MaterialTheme.typography.labelLarge,
-                        color = MaterialTheme.colorScheme.primary,
-                        modifier = Modifier.width(18.dp),
+                        "这个动作暂时没有文字说明，请结合三帧图示和器械设置练习。",
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                        style = MaterialTheme.typography.bodyMedium,
                     )
-                    Text(item.steps[index], style = MaterialTheme.typography.bodyLarge)
+                }
+            } else {
+                items(item.steps.size) { index ->
+                    Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                        Text(
+                            "${index + 1}",
+                            style = MaterialTheme.typography.labelLarge,
+                            color = MaterialTheme.colorScheme.primary,
+                            modifier = Modifier.width(18.dp),
+                        )
+                        Text(item.steps[index], style = MaterialTheme.typography.bodyLarge)
+                    }
                 }
             }
-        }
-        item {
-            Text(
-                if (item != null && item.sourceId != null) {
-                    "分步文字来自 free-exercise-db（Unlicense），已译为中文。"
-                } else {
-                    "说明为项目原创要点（MIT），结合三帧图示参考。"
-                },
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
-        }
-        item {
-            Text(
-                "动作图来自 workout-guide（CC BY-SA 4.0），仅供训练参考，不能替代专业指导。",
-                style = MaterialTheme.typography.bodyMedium,
-                color = MaterialTheme.colorScheme.onSurfaceVariant,
-            )
+            item {
+                Text(
+                    if (item != null && item.sourceId != null) {
+                        "分步文字来自 free-exercise-db（Unlicense），已译为中文。"
+                    } else {
+                        "说明为项目原创要点（MIT），结合三帧图示参考。"
+                    },
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            item {
+                Text(
+                    "动作图来自 workout-guide（CC BY-SA 4.0），仅供训练参考，不能替代专业指导。",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
         }
     }
 }

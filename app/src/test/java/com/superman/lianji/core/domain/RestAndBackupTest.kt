@@ -23,12 +23,24 @@ class RestAndBackupTest {
                 sessions = listOf(
                     SessionBackup("s", "自由训练", "", null, "completed", 1_700_000_000_000, 1_700_000_100_000, 20_000, "Asia/Shanghai"),
                 ),
+                customExercises = listOf(
+                    CustomExerciseBackup(
+                        id = "custom-1",
+                        slug = "custom-1",
+                        nameZh = "爬楼",
+                        equipmentZh = "自重",
+                        primaryMuscleZh = "心肺",
+                        exerciseType = "duration",
+                        exerciseTypeZh = "时长",
+                    ),
+                ),
             ),
             settings = SettingsBackup("KG", 90, true, true, "SYSTEM", true),
         )
         val bytes = ByteArrayOutputStream().also { BackupArchive.write(it, bundle) }.toByteArray()
         val restored = BackupArchive.read(ByteArrayInputStream(bytes))
         assertEquals("自由训练", restored.userData.sessions.single().title)
+        assertEquals("爬楼", restored.userData.customExercises.single().nameZh)
         val broken = ByteArrayOutputStream()
         java.util.zip.ZipOutputStream(broken).use { zip ->
             zip.putNextEntry(java.util.zip.ZipEntry("manifest.json"))

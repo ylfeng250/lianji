@@ -34,6 +34,7 @@ import com.superman.lianji.core.database.WorkoutExerciseEntity
 import com.superman.lianji.core.domain.BackupArchive
 import com.superman.lianji.core.domain.BackupBundle
 import com.superman.lianji.core.domain.BackupManifest
+import com.superman.lianji.core.domain.CustomExerciseBackup
 import com.superman.lianji.core.domain.FavoriteBackup
 import com.superman.lianji.core.domain.RestSnapshot
 import com.superman.lianji.core.domain.RoutineBackup
@@ -44,11 +45,18 @@ import com.superman.lianji.core.domain.SessionMarker
 import com.superman.lianji.core.domain.SetBackup
 import com.superman.lianji.core.domain.SettingsBackup
 import com.superman.lianji.core.domain.StatSet
+import com.superman.lianji.core.domain.UpdateCheckResult
+import com.superman.lianji.core.domain.UpdateManifest
 import com.superman.lianji.core.domain.UserDataBackup
 import com.superman.lianji.core.domain.WeightUnit
 import com.superman.lianji.core.domain.WorkoutExerciseBackup
+import com.superman.lianji.core.domain.checkForUpdate
 import com.superman.lianji.core.domain.kindOf
 import com.superman.lianji.core.domain.trackingOf
+import com.superman.lianji.core.domain.customExerciseTypeZh
+import com.superman.lianji.core.domain.normalizeCustomExerciseType
+import com.superman.lianji.core.domain.shouldAutoCheck
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -93,6 +101,7 @@ data class ExerciseSummary(
     val frame: String,
     val favorite: Boolean,
     val hasDetailedSteps: Boolean,
+    val isCustom: Boolean = false,
 )
 
 data class ExerciseDetail(
@@ -109,6 +118,14 @@ data class ExerciseDetail(
     val steps: List<String>,
     val sourceId: String?,
     val favorite: Boolean,
+    val isCustom: Boolean = false,
+)
+
+data class CustomExerciseDraft(
+    val nameZh: String,
+    val exerciseType: String,
+    val muscleZh: String = "心肺",
+    val equipmentZh: String = "自重",
 )
 
 data class RoutineDetails(val routine: RoutineEntity, val exercises: List<Pair<RoutineExerciseEntity, List<RoutineSetEntity>>>)
@@ -199,6 +216,39 @@ class SettingsRepository(private val context: Context) {
     }
 }
 
+class UpdateRepository(
+    private val context: Context,
+    private val manifestUrl: String = BuildConfig.UPDATE_MANIFEST_URL,
+) {
+    private val lastCheckKey = longPreferencesKey("update_last_check")
+    private val dismissedCodeKey = intPreferencesKey("update_dismissed_code")
+
+    suspend fun check(currentCode: Int = BuildConfig.VERSION_CODE): UpdateCheckResult =
+        withContext(Dispatchers.IO) {
+            val result = checkForUpdate(manifestUrl, currentCode)
+            context.settingsStore.edit { it[lastCheckKey] = System.currentTimeMillis() }
+            result
+        }
+
+    /** 启动时自动检查：每天最多一次；同一版本点过「稍后」不再打扰。失败静默。 */
+    suspend fun checkForStartupPrompt(currentCode: Int = BuildConfig.VERSION_CODE): UpdateManifest? {
+        val prefs = context.settingsStore.data.catch { emit(emptyPreferences()) }.first()
+        val now = System.currentTimeMillis()
+        if (!shouldAutoCheck(prefs[lastCheckKey] ?: 0L, now)) return null
+        return when (val result = check(currentCode)) {
+            is UpdateCheckResult.Available -> {
+                val dismissed = prefs[dismissedCodeKey] ?: 0
+                if (result.manifest.versionCode <= dismissed) null else result.manifest
+            }
+            else -> null
+        }
+    }
+
+    suspend fun dismiss(versionCode: Int) {
+        context.settingsStore.edit { it[dismissedCodeKey] = versionCode }
+    }
+}
+
 class ExerciseRepository(private val dao: com.superman.lianji.core.database.CatalogDao) {
     fun observe(query: String, muscle: String, equipment: String, type: String, favoritesOnly: Boolean): Flow<List<ExerciseSummary>> =
         combine(dao.observeExercises(), dao.observeFavorites()) { exercises, favorites ->
@@ -219,6 +269,41 @@ class ExerciseRepository(private val dao: com.superman.lianji.core.database.Cata
         combine(dao.observeExercise(id), dao.observeFavorites()) { exercise, favorites ->
             exercise?.toDetail(exercise.id in favorites)
         }
+
+    suspend fun createCustom(draft: CustomExerciseDraft): String {
+        val name = draft.nameZh.trim()
+        require(name.isNotEmpty()) { "请填写运动名称" }
+        require(name.length <= 40) { "运动名称过长" }
+        val type = normalizeCustomExerciseType(draft.exerciseType)
+        val id = "custom-${UUID.randomUUID()}"
+        val muscle = draft.muscleZh.trim().ifBlank { "心肺" }.take(20)
+        val equipment = draft.equipmentZh.trim().ifBlank { "自重" }.take(20)
+        dao.insertExercise(
+            ExerciseEntity(
+                id = id,
+                slug = id,
+                nameEn = "",
+                nameZh = name,
+                aliasesZh = "",
+                equipmentZh = equipment,
+                primaryMuscleZh = muscle,
+                secondaryZh = "",
+                exerciseType = type,
+                exerciseTypeZh = customExerciseTypeZh(type),
+                isStretch = false,
+                instructionsZh = "[]",
+                instructionSourceId = null,
+                frameName = "",
+                allFrames = "",
+                isCustom = true,
+            ),
+        )
+        return id
+    }
+
+    suspend fun deleteCustom(id: String) {
+        dao.deleteCustomExercise(id)
+    }
 
     suspend fun toggleFavorite(id: String) {
         if (dao.isFavorite(id) > 0) dao.unfavorite(id) else dao.favorite(FavoriteEntity(id, System.currentTimeMillis()))
@@ -542,6 +627,7 @@ class BackupRepository(
         val workoutExercises = sessions.flatMap { dao.observeWorkoutExercises(it.id).first() }
         val sets = if (workoutExercises.isEmpty()) emptyList() else dao.observeSets(workoutExercises.map { it.id }).first()
         val favorites = database.catalog().favoriteRows()
+        val customExercises = database.catalog().customExercises()
         val current = settings.settings.first()
         val bundle = BackupBundle(
             BackupManifest(BackupArchive.FORMAT_VERSION, BuildConfig.VERSION_NAME, 1, System.currentTimeMillis()),
@@ -553,6 +639,12 @@ class BackupRepository(
                 sessions.map { SessionBackup(it.id, it.title, it.notes, it.routineId, it.status, it.startedAtEpochMs, it.endedAtEpochMs, it.localEpochDay, it.zoneId) },
                 workoutExercises.map { WorkoutExerciseBackup(it.id, it.sessionId, it.exerciseId, it.exerciseName, it.muscleZh, it.trackingType, it.orderIndex, it.restSeconds) },
                 sets.map { SetBackup(it.id, it.workoutExerciseId, it.orderIndex, it.setType, it.reps, it.weightGrams, it.durationMs, it.distanceMm, it.rpe, it.note, it.completed, it.completedAtEpochMs) },
+                customExercises.map {
+                    CustomExerciseBackup(
+                        it.id, it.slug, it.nameEn, it.nameZh, it.aliasesZh, it.equipmentZh, it.primaryMuscleZh, it.secondaryZh,
+                        it.exerciseType, it.exerciseTypeZh, it.isStretch, it.instructionsZh, it.instructionSourceId, it.frameName, it.allFrames,
+                    )
+                },
             ),
             SettingsBackup(current.weightUnit.name, current.defaultRestSeconds, current.soundEnabled, current.vibrationEnabled, current.themeMode.name, current.keepScreenOn),
         )
@@ -562,6 +654,15 @@ class BackupRepository(
     suspend fun importFrom(uri: Uri) {
         val bundle = context.contentResolver.openInputStream(uri)?.use { BackupArchive.read(it) } ?: error("无法读取备份")
         val data = bundle.userData
+        data.customExercises.forEach { item ->
+            database.catalog().insertExercise(
+                ExerciseEntity(
+                    item.id, item.slug, item.nameEn, item.nameZh, item.aliasesZh, item.equipmentZh, item.primaryMuscleZh,
+                    item.secondaryZh, item.exerciseType, item.exerciseTypeZh, item.isStretch, item.instructionsZh,
+                    item.instructionSourceId, item.frameName, item.allFrames, isCustom = true,
+                ),
+            )
+        }
         val frames = database.catalog().allExercises().associate { it.id to it.frameName }
         database.training().replaceUserContent(
             data.favorites.map { FavoriteEntity(it.exerciseId, it.createdAt) },
@@ -617,6 +718,7 @@ class AppContainer(context: Context) {
     val exercises = ExerciseRepository(database.catalog())
     val training = TrainingRepository(database.training(), database.catalog())
     val backup = BackupRepository(appContext, database, settings)
+    val updates = UpdateRepository(appContext)
     val feedback = Feedback(appContext)
     val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
@@ -658,9 +760,9 @@ private class CatalogSeeder(private val context: Context, private val database: 
         if (meta?.revision == catalog.revision && meta.exerciseCount == catalog.exercises.size && meta.instructionCount == instructions) return
         val json = Json
         database.catalog().upsertExercises(catalog.exercises.map { item ->
-            ExerciseEntity(item.id, item.slug, item.nameEn, item.nameZh, item.aliasesZh.joinToString(" "), item.equipmentZh, item.primaryMuscleZh, item.secondaryMuscles.joinToString("、") { it.zh }, item.exerciseType, item.exerciseTypeZh, item.isStretch, json.encodeToString(item.instructionsZh), item.instructionSourceId, item.frames.first(), item.frames.joinToString(" "))
+            ExerciseEntity(item.id, item.slug, item.nameEn, item.nameZh, item.aliasesZh.joinToString(" "), item.equipmentZh, item.primaryMuscleZh, item.secondaryMuscles.joinToString("、") { it.zh }, item.exerciseType, item.exerciseTypeZh, item.isStretch, json.encodeToString(item.instructionsZh), item.instructionSourceId, item.frames.first(), item.frames.joinToString(" "), isCustom = false)
         })
-        database.catalog().clearFrames()
+        database.catalog().clearCatalogFrames()
         database.catalog().insertFrames(catalog.exercises.flatMap { item -> item.frames.mapIndexed { index, name -> ExerciseFrameEntity(item.id, index + 1, name) } })
         database.catalog().upsertMeta(CatalogMetaEntity(revision = catalog.revision, exerciseCount = catalog.exercises.size, instructionCount = instructions))
     }
@@ -675,9 +777,10 @@ private fun ExerciseEntity.toSummary(favorite: Boolean) = ExerciseSummary(
     frame = frameName,
     favorite = favorite,
     hasDetailedSteps = instructionSourceId != null,
+    isCustom = isCustom,
 )
 
-private fun ExerciseEntity.toDetail(favorite: Boolean) = ExerciseDetail(id, nameZh, nameEn, primaryMuscleZh, secondaryZh, equipmentZh, exerciseTypeZh, exerciseType, isStretch, allFrames.split(" ").filter { it.isNotBlank() }, runCatching { Json.decodeFromString<List<String>>(instructionsZh) }.getOrDefault(emptyList()), instructionSourceId, favorite)
+private fun ExerciseEntity.toDetail(favorite: Boolean) = ExerciseDetail(id, nameZh, nameEn, primaryMuscleZh, secondaryZh, equipmentZh, exerciseTypeZh, exerciseType, isStretch, allFrames.split(" ").filter { it.isNotBlank() }, runCatching { Json.decodeFromString<List<String>>(instructionsZh) }.getOrDefault(emptyList()), instructionSourceId, favorite, isCustom)
 
 private fun ExerciseEntity.toRoutineExercise(id: String, routineId: String, order: Int, restSeconds: Int) =
     RoutineExerciseEntity(id, routineId, this.id, nameZh, exerciseType, frameName, order, restSeconds)

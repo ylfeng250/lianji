@@ -18,7 +18,7 @@ fun versionCodeOf(name: String): Int {
     return major.toInt() * 10000 + minor.toInt() * 100 + patch.toInt()
 }
 
-val appVersionName = providers.gradleProperty("appVersionName").orNull?.takeIf { it.isNotBlank() } ?: "1.1.0"
+val appVersionName = providers.gradleProperty("appVersionName").orNull?.takeIf { it.isNotBlank() } ?: "1.3.2"
 val appVersionCode = providers.gradleProperty("appVersionCode").orNull?.toIntOrNull()?.takeIf { it > 0 }
     ?: versionCodeOf(appVersionName)
 
@@ -53,6 +53,11 @@ android {
         targetSdk = 36
         versionCode = appVersionCode
         versionName = appVersionName
+        buildConfigField(
+            "String",
+            "UPDATE_MANIFEST_URL",
+            "\"https://page.hopev5.com/lianji/version.json\"",
+        )
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // 默认会给 906 张矢量动作图按 6 个密度各生成一套 PNG 兜底（约 70 MB），
         // 但 Compose 直接解析矢量 XML（含 fillType），不需要这些位图，显式关掉。
@@ -158,20 +163,22 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
 }
 
-tasks.register("checkOfflineManifest") {
+tasks.register("checkPrivacyManifest") {
     doLast {
         val manifest = file("src/main/AndroidManifest.xml").readText()
         val tags = Regex("<uses-permission\\b[^>]*>").findAll(manifest).map { it.value }.toList()
-        check(tags.any { "INTERNET" in it && "tools:node=\"remove\"" in it })
+        // INTERNET 仅用于检查更新；ACCESS_NETWORK_STATE 仍禁止。
+        check(tags.any { "INTERNET" in it && "tools:node=\"remove\"" !in it })
         check(tags.any { "ACCESS_NETWORK_STATE" in it && "tools:node=\"remove\"" in it })
-        check(tags.none { ("INTERNET" in it || "ACCESS_NETWORK_STATE" in it) && "tools:node=\"remove\"" !in it })
+        check(tags.none { "ACCESS_NETWORK_STATE" in it && "tools:node=\"remove\"" !in it })
         check(manifest.contains("android:allowBackup=\"false\""))
+        check(manifest.contains("android:usesCleartextTraffic=\"false\""))
     }
 }
 
-tasks.named("preBuild").configure { dependsOn("checkOfflineManifest") }
+tasks.named("preBuild").configure { dependsOn("checkPrivacyManifest") }
 
-tasks.register("assertReleaseOffline") {
+tasks.register("assertReleasePrivacy") {
     dependsOn("processReleaseManifest")
     doLast {
         val root = layout.buildDirectory.dir("intermediates/merged_manifest").get().asFile
@@ -179,7 +186,7 @@ tasks.register("assertReleaseOffline") {
         check(manifests.isNotEmpty()) { "没有找到合并后的清单" }
         manifests.forEach { file ->
             val text = file.readText()
-            check("android.permission.INTERNET" !in text) { "${file.path} 仍包含网络权限" }
+            check("android.permission.INTERNET" in text) { "${file.path} 缺少更新检查所需的网络权限" }
             check("android.permission.ACCESS_NETWORK_STATE" !in text) { "${file.path} 仍包含网络状态权限" }
             check("android:allowBackup=\"false\"" in text) { "${file.path} 未关闭备份" }
         }
@@ -214,6 +221,6 @@ tasks.register("assertExerciseArtRetained") {
 }
 
 tasks.matching { it.name == "assembleRelease" }.configureEach {
-    finalizedBy("assertReleaseOffline")
+    finalizedBy("assertReleasePrivacy")
     finalizedBy("assertExerciseArtRetained")
 }

@@ -16,6 +16,8 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.imePadding
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -77,8 +79,10 @@ import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
 import com.superman.lianji.core.data.AppContainer
+import com.superman.lianji.core.data.CustomExerciseDraft
 import com.superman.lianji.core.data.ExerciseSummary
 import com.superman.lianji.core.data.PickTarget
+import com.superman.lianji.core.domain.CUSTOM_EXERCISE_TYPES
 import com.superman.lianji.core.domain.equipmentRank
 import com.superman.lianji.core.domain.muscleRank
 import com.superman.lianji.core.domain.orderedEquipment
@@ -105,6 +109,28 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+
+private data class CustomExercisePreset(
+    val nameZh: String,
+    val exerciseType: String,
+    val muscleZh: String,
+    val equipmentZh: String = "自重",
+)
+
+private val CUSTOM_PRESETS = listOf(
+    CustomExercisePreset("爬楼", "duration", "心肺"),
+    CustomExercisePreset("跑步", "distance_duration", "心肺"),
+    CustomExercisePreset("徒步", "distance_duration", "心肺"),
+    CustomExercisePreset("爬山", "distance_duration", "心肺"),
+    CustomExercisePreset("平板支撑", "duration", "核心"),
+)
+
+private fun defaultMuscleForType(exerciseType: String): String = when (exerciseType) {
+    "duration", "distance_duration" -> "心肺"
+    else -> "核心"
+}
+
+private fun isDefaultMuscle(value: String): Boolean = value in setOf("", "心肺", "核心")
 
 enum class ExerciseSort(val label: String) {
     NAME("名称"),
@@ -207,6 +233,11 @@ class ExerciseListViewModel(private val container: AppContainer) : ViewModel() {
     fun activeFilterCount(): Int =
         listOf(muscle.value, equipment.value, type.value).count { it.isNotBlank() } +
             (if (favoritesOnly.value) 1 else 0) + (if (stepsOnly.value) 1 else 0)
+
+    fun createCustom(draft: CustomExerciseDraft, done: (String) -> Unit) = viewModelScope.launch {
+        val id = container.exercises.createCustom(draft)
+        done(id)
+    }
 }
 
 @OptIn(ExperimentalMaterial3Api::class, ExperimentalFoundationApi::class)
@@ -229,6 +260,7 @@ fun ExerciseListScreen(container: AppContainer, nav: NavHostController, pick: Pi
     val scope = rememberCoroutineScope()
     val haptics = LocalHapticFeedback.current
     var showFilters by rememberSaveable { mutableStateOf(false) }
+    var showCustom by rememberSaveable { mutableStateOf(false) }
     var sortOpen by remember { mutableStateOf(false) }
     var routineSheet by remember { mutableStateOf<List<String>?>(null) }
     val allIds = remember(exercises) { exercises.map { it.id } }
@@ -258,6 +290,24 @@ fun ExerciseListScreen(container: AppContainer, nav: NavHostController, pick: Pi
         model.addToSession(active?.id, ids) { session ->
             toast(if (active == null) "已开始自由训练，加入 ${ids.size} 个动作" else "已加入 ${ids.size} 个动作")
             nav.navigate("workout/$session")
+        }
+    }
+
+    fun onCustomCreated(id: String, startWorkout: Boolean) {
+        showCustom = false
+        when {
+            pick != null -> model.pick(pick, listOf(id)) {
+                toast("已添加自定义运动")
+                nav.popBackStack()
+            }
+            startWorkout -> {
+                toast("已创建并加入训练")
+                addToWorkout(listOf(id))
+            }
+            else -> {
+                toast("已创建自定义运动")
+                nav.navigate("exercise/$id")
+            }
         }
     }
 
@@ -291,6 +341,9 @@ fun ExerciseListScreen(container: AppContainer, nav: NavHostController, pick: Pi
                     },
                     actions = {
                         if (!replaceMode) {
+                            IconButton({ showCustom = true }, modifier = Modifier.testTag("custom_exercise")) {
+                                Icon(Icons.Filled.Add, "自定义运动")
+                            }
                             Box {
                                 IconButton({ sortOpen = true }) { Icon(Icons.Filled.SwapVert, "排序") }
                                 DropdownMenu(sortOpen, { sortOpen = false }) {
@@ -403,10 +456,16 @@ fun ExerciseListScreen(container: AppContainer, nav: NavHostController, pick: Pi
             if (exercises.isEmpty()) {
                 EmptyHint(
                     title = if (query.isNotBlank() || model.activeFilterCount() > 0) "没有匹配的动作" else "动作库是空的",
-                    hint = if (query.isNotBlank() || model.activeFilterCount() > 0) "换个关键词，或者重置筛选条件。" else "动作目录会随安装包一起预置。",
+                    hint = if (query.isNotBlank() || model.activeFilterCount() > 0) {
+                        "换个关键词，或者重置筛选条件。也可以点右上角 + 添加自定义运动。"
+                    } else {
+                        "动作目录会随安装包一起预置。也可以点右上角 + 添加自定义运动。"
+                    },
                     action = if (model.activeFilterCount() > 0 || query.isNotBlank()) {
                         { TextButton({ model.query.value = ""; model.resetFilters() }) { Text("重置筛选") } }
-                    } else null,
+                    } else {
+                        { TextButton({ showCustom = true }) { Text("添加自定义运动") } }
+                    },
                 )
             }
             LazyColumn(
@@ -482,6 +541,16 @@ fun ExerciseListScreen(container: AppContainer, nav: NavHostController, pick: Pi
         )
     }
 
+    if (showCustom) {
+        CustomExerciseSheet(
+            pickMode = pickMode,
+            onCreate = { draft, startWorkout ->
+                model.createCustom(draft) { id -> onCustomCreated(id, startWorkout) }
+            },
+            onDismiss = { showCustom = false },
+        )
+    }
+
     routineSheet?.let { ids ->
         RoutinePickerSheet(
             routines = routines,
@@ -544,7 +613,16 @@ private fun ExerciseRow(
             }
             ExerciseArt(listOf(item.frame), "${item.nameZh}动作图", Modifier.size(60.dp))
             Column(Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                Text(item.nameZh, style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis)
+                Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(6.dp)) {
+                    Text(item.nameZh, style = MaterialTheme.typography.titleMedium, maxLines = 1, overflow = TextOverflow.Ellipsis, modifier = Modifier.weight(1f, fill = false))
+                    if (item.isCustom) {
+                        Text(
+                            "自定义",
+                            style = MaterialTheme.typography.labelSmall,
+                            color = MaterialTheme.colorScheme.primary,
+                        )
+                    }
+                }
                 Text(
                     "${item.muscleZh} · ${item.equipmentZh} · ${item.typeZh}",
                     style = MaterialTheme.typography.bodyMedium,
@@ -555,6 +633,144 @@ private fun ExerciseRow(
             }
             if (item.favorite && !selectionMode) {
                 Icon(Icons.Filled.Star, "已收藏", tint = MaterialTheme.colorScheme.primary, modifier = Modifier.size(20.dp))
+            }
+        }
+    }
+}
+
+@OptIn(ExperimentalMaterial3Api::class, androidx.compose.foundation.layout.ExperimentalLayoutApi::class)
+@Composable
+private fun CustomExerciseSheet(
+    pickMode: Boolean,
+    onCreate: (CustomExerciseDraft, Boolean) -> Unit,
+    onDismiss: () -> Unit,
+) {
+    val sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)
+    var name by rememberSaveable { mutableStateOf("") }
+    var exerciseType by rememberSaveable { mutableStateOf("duration") }
+    var muscle by rememberSaveable { mutableStateOf(defaultMuscleForType("duration")) }
+    var equipment by rememberSaveable { mutableStateOf("自重") }
+    val canSave = name.trim().isNotEmpty()
+    val fallbackMuscle = defaultMuscleForType(exerciseType)
+
+    fun applyPreset(preset: CustomExercisePreset) {
+        name = preset.nameZh
+        exerciseType = preset.exerciseType
+        muscle = preset.muscleZh
+        equipment = preset.equipmentZh
+    }
+
+    fun selectType(next: String) {
+        if (isDefaultMuscle(muscle)) muscle = defaultMuscleForType(next)
+        exerciseType = next
+    }
+
+    fun draft() = CustomExerciseDraft(
+        nameZh = name.trim(),
+        exerciseType = exerciseType,
+        muscleZh = muscle.trim().ifBlank { fallbackMuscle },
+        equipmentZh = equipment.trim().ifBlank { "自重" },
+    )
+
+    ModalBottomSheet(onDismissRequest = onDismiss, sheetState = sheetState) {
+        // BottomSheet 常给无界高度，weight 滚不动；内容区用明确 max 高度，底栏固定。
+        Column(
+            Modifier
+                .fillMaxWidth()
+                .imePadding()
+                .navigationBarsPadding()
+                .testTag("custom_exercise_sheet"),
+        ) {
+            Column(
+                Modifier
+                    .fillMaxWidth()
+                    .heightIn(max = 460.dp)
+                    .verticalScroll(rememberScrollState())
+                    .padding(horizontal = 20.dp)
+                    .padding(bottom = 8.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp),
+            ) {
+                Text("自定义运动", style = MaterialTheme.typography.titleLarge)
+                Text(
+                    "目录里没有、或想自己命名的运动都可以加。选好记录方式后，训练里就能直接录入。",
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    style = MaterialTheme.typography.bodyMedium,
+                )
+                SectionTitle("常用")
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    CUSTOM_PRESETS.forEach { preset ->
+                        FilterChip(
+                            selected = name == preset.nameZh && exerciseType == preset.exerciseType,
+                            onClick = { applyPreset(preset) },
+                            label = { Text(preset.nameZh) },
+                        )
+                    }
+                }
+                OutlinedTextField(
+                    value = name,
+                    onValueChange = { if (it.length <= 40) name = it },
+                    modifier = Modifier.fillMaxWidth().testTag("custom_exercise_name"),
+                    label = { Text("运动名称") },
+                    singleLine = true,
+                )
+                SectionTitle("记录方式")
+                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    CUSTOM_EXERCISE_TYPES.forEach { (value, label) ->
+                        FilterChip(
+                            selected = exerciseType == value,
+                            onClick = { selectType(value) },
+                            label = { Text(label) },
+                        )
+                    }
+                }
+                Text(
+                    when (exerciseType) {
+                        "distance_duration" -> "训练时填写时长（秒）和距离（公里）。"
+                        "duration" -> "训练时填写时长（秒），适合平板支撑、爬楼等。"
+                        "bodyweight_reps" -> "训练时填写次数，可选体重。"
+                        else -> "训练时填写次数和重量。"
+                    },
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+                OutlinedTextField(
+                    value = muscle,
+                    onValueChange = { if (it.length <= 20) muscle = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text("肌群") },
+                    singleLine = true,
+                )
+                OutlinedTextField(
+                    value = equipment,
+                    onValueChange = { if (it.length <= 20) equipment = it },
+                    modifier = Modifier.fillMaxWidth(),
+                    label = { Text("器械") },
+                    singleLine = true,
+                )
+            }
+            HorizontalDivider()
+            Row(
+                Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 20.dp, vertical = 12.dp)
+                    .padding(bottom = 8.dp),
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+            ) {
+                OutlinedButton(onDismiss, Modifier.weight(1f)) { Text("取消") }
+                if (!pickMode) {
+                    OutlinedButton(
+                        { onCreate(draft(), false) },
+                        Modifier.weight(1f),
+                        enabled = canSave,
+                    ) { Text("仅保存") }
+                }
+                Button(
+                    { onCreate(draft(), !pickMode) },
+                    Modifier.weight(1f),
+                    enabled = canSave,
+                ) {
+                    Text(if (pickMode) "创建并添加" else "保存并训练")
+                }
             }
         }
     }

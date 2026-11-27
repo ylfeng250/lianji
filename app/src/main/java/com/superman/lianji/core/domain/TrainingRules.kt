@@ -48,6 +48,20 @@ fun trackingOf(value: String): TrackingType = when (value) {
     else -> TrackingType.WEIGHT_REPS
 }
 
+/** 自定义运动可选的追踪类型，与目录字符串保持一致。 */
+val CUSTOM_EXERCISE_TYPES = listOf(
+    "duration" to "时长",
+    "distance_duration" to "距离与时长",
+    "bodyweight_reps" to "自重次数",
+    "weight_reps" to "负重次数",
+)
+
+fun normalizeCustomExerciseType(value: String): String =
+    CUSTOM_EXERCISE_TYPES.firstOrNull { it.first == value }?.first ?: "duration"
+
+fun customExerciseTypeZh(value: String): String =
+    CUSTOM_EXERCISE_TYPES.firstOrNull { it.first == value }?.second ?: "时长"
+
 fun kindOf(value: String): SetKind = when (value) {
     "warmup" -> SetKind.WARMUP
     "drop" -> SetKind.DROP
@@ -282,7 +296,7 @@ private val EQUIPMENT_ORDER = listOf(
     "自重", "哑铃", "杠铃", "固定器械", "绳索", "弹力带", "引体杆", "墙", "毛巾", "杠铃片", "有氧器械", "其他",
 )
 
-private val TYPE_ORDER = listOf("负重次数", "自重次数", "辅助次数", "时长", "距离时长")
+private val TYPE_ORDER = listOf("负重次数", "自重次数", "辅助自重", "辅助次数", "时长", "距离与时长", "距离时长")
 
 fun muscleRank(name: String): Int = MUSCLE_ORDER.indexOf(name).let { if (it < 0) MUSCLE_ORDER.size else it }
 

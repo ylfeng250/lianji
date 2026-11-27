@@ -8,7 +8,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Art: CC BY-SA 4.0](https://img.shields.io/badge/art-CC%20BY--SA%204.0-8A6B41)](LICENSE-ASSETS)
 [![Android 7.0+](https://img.shields.io/badge/Android-7.0%2B-3DDC84?logo=android&logoColor=white)](#下载)
-[![No INTERNET permission](https://img.shields.io/badge/INTERNET-not%20requested-2E7D32)](#隐私与数据)
+[![Local-only data](https://img.shields.io/badge/data-local%20only-2E7D32)](#隐私与数据)
 
 [功能](#功能) · [截图](#截图) · [下载](#下载) · [构建](#构建) · [素材与许可](#素材与许可) · [English](#english)
 
@@ -17,7 +17,7 @@
 想找一个能安静记录训练的中文 App：动作演示离线、动作名字看得懂、训练时单手能完成记录、数据不被账号和订阅绑架。
 试过一些记录应用后，练迹把需要的部分留下，把不需要的部分删掉，并且把代码公开出来，方便自己改、也方便别人参考。
 
-- **完全离线**：安装包不申请 `INTERNET` / `ACCESS_NETWORK_STATE` 权限，没有账号、广告、分析 SDK。
+- **数据留本机**：没有账号、广告、分析 SDK；训练记录只存在手机上。联网仅用于检查更新。
 - **中文动作库**：302 个动作都有中文说明，其中 85 个的分步文字译自 free-exercise-db，另外 217 个是项目原创要点。
 - **动作图来自开源项目**：[Workout Guide](https://github.com/bryllim/workout-guide) 的三帧 SVG，转成矢量图并按主题色着色。
 - **适合单手**：长按多选、左右滑动、删除撤销、步进器记组、固定在顶部的休息计时。
@@ -29,6 +29,8 @@
 ### 动作库
 
 - 302 个动作，按拼音、肌群、器械或收藏排序；筛器械、训练类型，或只看详细步骤/收藏。
+- 可录入自定义运动（爬楼、跑步、徒步、爬山等），按时长 / 距离与时长 / 次数记录。
+- 检查更新：有新版本时提示用浏览器下载安装包。
 - 列表右滑收藏、左滑加入当前训练；长按多选后可以批量收藏、加入计划、加入训练。
 - 详情页左右翻页切换动作，三帧图自动播放/暂停、点圆点手动切帧。
 - 详情页显示最近三次训练；底部固定「开始训练 / 加入计划」。
@@ -78,11 +80,11 @@
 从 [GitHub Releases](https://github.com/ylfeng250/lianji/releases/latest) 下载最新 APK，或在本地构建：
 
 ```bash
-adb install -r lianji-1.1.0.apk
+adb install -r lianji-1.3.0.apk
 ```
 
 - 支持 Android 7.0（API 23）及以上，`targetSdk 36`。
-- APK 约 21 MB，包含全部 906 张矢量动作图，安装后不需要联网。
+- APK 约 21 MB，包含全部 906 张矢量动作图；日常训练不依赖网络，检查更新时会读取版本信息。
 - 官方 release 由维护者签名，并附带同名的 `.sha256` 校验文件；不同签名的包不能覆盖安装。
 - 如果你自己构建且没有配置发布密钥，会退回 debug 签名，适合自用，不适合分发给别人升级。
 
@@ -159,8 +161,8 @@ CI 在每次 push/PR 时跑单元测试、debug 构建和 release 构建；relea
 
 ## 隐私与数据
 
-- 安装包**不包含** `android.permission.INTERNET` 或 `ACCESS_NETWORK_STATE`；构建时会检查合并后的清单。
-- 没有账号、广告、分析 SDK、崩溃上报；应用不会发起任何网络请求。
+- 安装包申请 `INTERNET` **仅用于检查更新**；**不包含** `ACCESS_NETWORK_STATE`；构建时会检查合并后的清单。
+- 没有账号、广告、分析 SDK、崩溃上报；除更新检查外不会发起网络请求，也不上传训练数据。
 - 训练数据保存在 Room 数据库和 DataStore，`android:allowBackup="false"`，不参与系统云备份。
 - 备份只在你主动导出时写入你选择的文件，恢复也只从你选择的文件读取。
 - 唯一的显式权限是 `VIBRATE`，用于休息结束振动（可在设置里关掉）。
@@ -204,7 +206,7 @@ CI 在每次 push/PR 时跑单元测试、debug 构建和 release 构建；relea
 It ships 302 exercises with three-frame vector artwork from [Workout Guide](https://github.com/bryllim/workout-guide),
 plus routines, set/rest tracking, PRs, history and a local backup format.
 
-- Every exercise ships with a Chinese description; no account, no ads, no analytics, and **no `INTERNET` permission**.
+- Every exercise ships with a Chinese description; no account, no ads, no analytics. Training data stays on device; network is only used for optional update checks.
 - Kotlin + Jetpack Compose + Material 3 + Room; single Activity, MVVM.
 - `minSdk 23`, `targetSdk 36`, APK ~21 MB.
 - Build: `./gradlew :catalog-tools:test :app:testDebugUnitTest :app:assembleRelease` (JDK 21, Android SDK 36).

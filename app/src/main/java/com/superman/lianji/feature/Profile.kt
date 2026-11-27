@@ -43,12 +43,16 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.superman.lianji.BuildConfig
 import com.superman.lianji.core.data.AppContainer
 import com.superman.lianji.core.data.ThemeMode
 import com.superman.lianji.core.data.UserSettings
+import com.superman.lianji.core.domain.UpdateCheckResult
+import com.superman.lianji.core.domain.UpdateManifest
 import com.superman.lianji.core.domain.WeightUnit
 import com.superman.lianji.core.ui.LocalSnackbarHostState
 import com.superman.lianji.core.ui.SectionTitle
+import com.superman.lianji.core.ui.UpdateAvailableDialog
 import com.superman.lianji.core.ui.showInfo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -58,6 +62,8 @@ import java.time.LocalDate
 class ProfileViewModel(private val container: AppContainer) : ViewModel() {
     val settings = container.settings.settings
     val message = MutableStateFlow<String?>(null)
+    val checkingUpdate = MutableStateFlow(false)
+    val updateOffer = MutableStateFlow<UpdateManifest?>(null)
 
     fun update(transform: (UserSettings) -> UserSettings) = viewModelScope.launch { container.settings.update(transform) }
 
@@ -73,6 +79,26 @@ class ProfileViewModel(private val container: AppContainer) : ViewModel() {
             .onFailure { message.value = it.message ?: "恢复失败" }
     }
 
+    fun checkUpdate() = viewModelScope.launch {
+        if (checkingUpdate.value) return@launch
+        checkingUpdate.value = true
+        when (val result = container.updates.check()) {
+            is UpdateCheckResult.Available -> updateOffer.value = result.manifest
+            UpdateCheckResult.UpToDate -> message.value = "已是最新版本 ${BuildConfig.VERSION_NAME}"
+            is UpdateCheckResult.Failed -> message.value = result.reason
+        }
+        checkingUpdate.value = false
+    }
+
+    fun dismissUpdate() = viewModelScope.launch {
+        updateOffer.value?.let { container.updates.dismiss(it.versionCode) }
+        updateOffer.value = null
+    }
+
+    fun clearUpdateOffer() {
+        updateOffer.value = null
+    }
+
     fun clearMessage() {
         message.value = null
     }
@@ -83,6 +109,8 @@ fun ProfileScreen(container: AppContainer, onRoutines: () -> Unit, onAbout: () -
     val model: ProfileViewModel = viewModel(factory = simpleFactory { ProfileViewModel(container) })
     val settings by model.settings.collectAsState(initial = UserSettings())
     val message by model.message.collectAsState()
+    val checkingUpdate by model.checkingUpdate.collectAsState()
+    val updateOffer by model.updateOffer.collectAsState()
     val snackbar = LocalSnackbarHostState.current
     var confirm by rememberSaveable { mutableStateOf(false) }
     val export = rememberLauncherForActivityResult(ActivityResultContracts.CreateDocument("application/zip")) { uri ->
@@ -103,7 +131,7 @@ fun ProfileScreen(container: AppContainer, onRoutines: () -> Unit, onAbout: () -
     ) {
         Text("我的", style = MaterialTheme.typography.headlineLarge)
         Text(
-            "离线记录，没有账号，也不上传训练数据。",
+            "训练数据只保存在本机。检查更新时会联网读取版本信息，不上传训练记录。",
             color = MaterialTheme.colorScheme.onSurfaceVariant,
             style = MaterialTheme.typography.bodyMedium,
         )
@@ -169,6 +197,28 @@ fun ProfileScreen(container: AppContainer, onRoutines: () -> Unit, onAbout: () -
             }
         }
 
+        Card(Modifier.fillMaxWidth()) {
+            Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(10.dp)) {
+                SectionTitle("版本")
+                Text(
+                    "当前 ${BuildConfig.VERSION_NAME}",
+                    style = MaterialTheme.typography.bodyLarge,
+                )
+                OutlinedButton(
+                    onClick = { model.checkUpdate() },
+                    modifier = Modifier.fillMaxWidth(),
+                    enabled = !checkingUpdate,
+                ) {
+                    Text(if (checkingUpdate) "正在检查…" else "检查更新")
+                }
+                Text(
+                    "有新版本时会提示用浏览器下载安装包。启动时大约每天自动检查一次。",
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+        }
+
         TextButton(onAbout, Modifier.fillMaxWidth()) { Text("关于、隐私与许可") }
         Spacer(Modifier.padding(bottom = 12.dp))
     }
@@ -184,6 +234,13 @@ fun ProfileScreen(container: AppContainer, onRoutines: () -> Unit, onAbout: () -
                 }) { Text("继续恢复") }
             },
             dismissButton = { TextButton({ confirm = false }) { Text("取消") } },
+        )
+    }
+    updateOffer?.let { manifest ->
+        UpdateAvailableDialog(
+            manifest = manifest,
+            onDismiss = { model.clearUpdateOffer() },
+            onLater = { model.dismissUpdate() },
         )
     }
 }
@@ -234,7 +291,8 @@ fun AboutScreen(onBack: () -> Unit) {
             IconButton(onBack) { Icon(Icons.Filled.ArrowBack, "返回") }
             Text("关于练迹", style = MaterialTheme.typography.headlineSmall)
         }
-        Text("练迹是开源、离线的训练记录应用。没有账号，不申请网络权限，训练数据只保存在这台手机上。源代码和许可：github.com/ylfeng250/lianji")
+        Text("练迹是开源的训练记录应用。没有账号、广告和分析；训练数据只保存在这台手机上。联网仅用于检查更新。源代码和许可：github.com/ylfeng250/lianji")
+        Text("当前版本 ${BuildConfig.VERSION_NAME}")
         Text("动作图示来自 Bryl Lim 的 workout-guide，部分第一帧改编自 Everkinetic，采用 CC BY-SA 4.0。应用把 SVG 转成 Android Vector Drawable 并用主题色着色；修改后的图示继续以同一许可提供。")
         Text("302 个动作都有中文说明：其中 85 个的分步文字来自 free-exercise-db（Unlicense），已译为中文；其余 217 个是项目原创要点（MIT）。不使用 free-exercise-db 的照片。")
         Text("交互设计参考了 GymMane 与 LibreFit 的公开界面与产品思路，没有使用它们的源代码。")

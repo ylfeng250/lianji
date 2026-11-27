@@ -11,11 +11,11 @@ import org.junit.runner.RunWith
 @RunWith(AndroidJUnit4::class)
 class OfflinePermissionTest {
     @Test
-    fun releasePackageDoesNotRequestNetwork() {
+    fun packageOnlyUsesInternetForUpdateCheck() {
         val context = InstrumentationRegistry.getInstrumentation().targetContext
         val info = context.packageManager.getPackageInfo(context.packageName, PackageManager.GET_PERMISSIONS)
         val permissions = info.requestedPermissions?.toList().orEmpty()
-        assertFalse(permissions.contains("android.permission.INTERNET"))
+        assertTrue(permissions.contains("android.permission.INTERNET"))
         assertFalse(permissions.contains("android.permission.ACCESS_NETWORK_STATE"))
         assertTrue(permissions.contains("android.permission.VIBRATE"))
     }
